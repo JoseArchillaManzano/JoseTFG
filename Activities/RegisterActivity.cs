@@ -56,45 +56,37 @@ namespace JoseTFG.Activities
             var textUser = etUserName.Text;
             var textPassword = etPassword.Text;
             var textConfirm = etConfirmPassword.Text;
-            String message = "";
-            bool fail = false;
+
             if (textEmail == "" || textUser == "" || textPassword == "" || textConfirm == "")
             {
-                message = "Faltan campos por rellenar";
-                fail = true;
+                Toast toast = Toast.MakeText(this, Resource.String.missing_fields, ToastLength.Short);
+                toast.Show();
             }
             else if (!textPassword.Equals(textConfirm))
             {
-                message = "Las contraseñas no coinciden entre si";
-                fail = true;
+                Toast toast = Toast.MakeText(this, Resource.String.mismatched_password, ToastLength.Short);
+                toast.Show();
             }
             else if (!validEmail(textEmail))
             {
-                message = "El email introducido no es valido";
-                fail = true;
+                Toast toast = Toast.MakeText(this, Resource.String.mail_no_valid, ToastLength.Short);
+                toast.Show();
             }
-            if (!fail)
+            else
             {
                 bool result = ws.Registrar(textUser, textPassword, "usuario", textEmail);
                 if (result)
                 {
-                    Intent intent = new Intent(this, typeof(SurveyActivity)); 
+                    Intent intent = new Intent(this, typeof(SurveyActivity));
                     StartActivity(intent);
                     Finish();
                 }
                 else
                 {
-                    Toast toast = Toast.MakeText(this, "Este usuario ya está registrado", ToastLength.Short);
+                    Toast toast = Toast.MakeText(this, Resource.String.user_already_registered, ToastLength.Short);
                     toast.Show();
                 }
             }
-            else
-            {
-            Toast toast = Toast.MakeText(this, message, ToastLength.Short);
-            toast.Show();
-            }
-
-
         }
 
         private Boolean validEmail(String email)

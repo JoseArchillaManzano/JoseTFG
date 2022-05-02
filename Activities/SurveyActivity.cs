@@ -77,7 +77,7 @@ namespace JoseTFG.Activities
                 }
             }
             Button sendSurvey = new Button(new ContextThemeWrapper(this, Resource.Style.Button1), null, 0);
-            sendSurvey.Text = "Enviar cuestionario";
+            sendSurvey.Text = Resources.GetString(Resource.String.button_send);
             sendSurvey.SetPadding(0, padding, 0, padding);
             sendSurvey.Click += checkSurvey;
             linearLayout.AddView(sendSurvey);
@@ -110,7 +110,7 @@ namespace JoseTFG.Activities
             }
             if (missAnswer)
             {
-                Toast toast = Toast.MakeText(this, "Faltan preguntas por responder", ToastLength.Short);
+                Toast toast = Toast.MakeText(this, Resource.String.questions_no_answered, ToastLength.Short);
                 toast.Show();
             }
             else
@@ -145,7 +145,7 @@ namespace JoseTFG.Activities
                     }
                 }
             }
-                List<Question> borrar = new List<Question>(questions);
+            List<Question> borrar = new List<Question>(questions);
         }
     }
 }

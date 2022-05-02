@@ -59,7 +59,7 @@ namespace JoseTFG.Activities
             }
             else
             {
-                Toast failSignIn = Toast.MakeText(this, "El usuario o contraseña es incorrecto", ToastLength.Short);
+                Toast failSignIn = Toast.MakeText(this, Resource.String.fail_login, ToastLength.Short);
                 failSignIn.Show();
             }
         }
