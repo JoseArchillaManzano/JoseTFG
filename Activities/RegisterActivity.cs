@@ -86,7 +86,7 @@ namespace JoseTFG.Activities
                 }
                 else
                 {
-
+                    //:TODO FALTA POR PENSAR SI SE PUDE HACER DE MANERA LIMPIA EL MANEJO DE FALLOS
                 }
 
             }
