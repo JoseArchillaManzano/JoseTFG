@@ -8,9 +8,6 @@ using Android.Widget;
 using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace JoseTFG.Activities
 {
@@ -81,18 +78,22 @@ namespace JoseTFG.Activities
                 bool result = ws.Registrar(textUser, textPassword, "usuario", textEmail);
                 if (result)
                 {
-                    Intent intent = new Intent(this, typeof(RegisterActivity)); //:TODO TE TENDRÍA QUE LLEVAR AL CUESTIONARIO, MODIFICAR
+                    Intent intent = new Intent(this, typeof(SurveyActivity)); 
                     StartActivity(intent);
+                    Finish();
                 }
                 else
                 {
-                    //:TODO FALTA POR PENSAR SI SE PUDE HACER DE MANERA LIMPIA EL MANEJO DE FALLOS
+                    Toast toast = Toast.MakeText(this, "Este usuario ya está registrado", ToastLength.Short);
+                    toast.Show();
                 }
-
             }
-
+            else
+            {
             Toast toast = Toast.MakeText(this, message, ToastLength.Short);
             toast.Show();
+            }
+
 
         }
 

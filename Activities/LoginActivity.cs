@@ -8,9 +8,6 @@ using Android.Widget;
 using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace JoseTFG.Activities
 {
@@ -58,6 +55,7 @@ namespace JoseTFG.Activities
             {
                 Intent intent = new Intent(this, typeof(SurveyActivity));
                 StartActivity(intent);
+                Finish();
             }
             else
             {
