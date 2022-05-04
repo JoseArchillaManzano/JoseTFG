@@ -68,7 +68,6 @@
     <Compile Include="Activities\RegisterActivity.cs" />
     <Compile Include="Activities\SurveyActivity.cs" />
     <Compile Include="Data\AllQuestions.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionMultipleSolutions.cs" />
     <Compile Include="Models\QuestionOneSolution.cs" />
@@ -91,9 +90,6 @@
     <None Include="Web References\WebReference\WS_Breathing.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_main.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />

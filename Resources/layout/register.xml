@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     tools:context=".SignupActivity">
-    <androidx.appcompat.widget.Toolbar
+    <Toolbar
         android:id="@+id/toolbar"
-        android:background="@android:color/transparent"
         app:navigationIcon="@drawable/ic_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </androidx.appcompat.widget.Toolbar>
-
+    </Toolbar>
     <ScrollView
         android:layout_below="@id/toolbar"
         android:layout_width="match_parent"

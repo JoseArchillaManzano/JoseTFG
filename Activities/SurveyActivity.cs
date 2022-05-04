@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Graphics;
 using Android.OS;
-using Android.Views;
 using Android.Widget;
 using JoseTFG.Models;
 using System;
@@ -16,6 +15,7 @@ namespace JoseTFG.Activities
         LinearLayout linearLayout;
         Dictionary<int, int> radioGroups;
         Dictionary<int, int> checkBoxes;
+        Button bSurvey;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,10 +26,12 @@ namespace JoseTFG.Activities
             linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
             radioGroups = new Dictionary<int, int>();
             checkBoxes = new Dictionary<int, int>();
-            PrepareSurvey();
+            bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
+            bSurvey.Click += checkSurvey;
+            //PrepareSurvey();
         }
 
-        private void PrepareSurvey()
+        /*private void PrepareSurvey()
         {
             float di = 10 * this.Resources.DisplayMetrics.Density;
             int padding = (int)Math.Round(di);
@@ -81,7 +83,7 @@ namespace JoseTFG.Activities
             sendSurvey.SetPadding(0, padding, 0, padding);
             sendSurvey.Click += checkSurvey;
             linearLayout.AddView(sendSurvey);
-        }
+        }*/
 
         private void checkSurvey(object sender, EventArgs eventArgs)
         {
@@ -95,8 +97,10 @@ namespace JoseTFG.Activities
                 if (child is RadioGroup)
                 {
                     RadioGroup aux = (RadioGroup)child;
+                    var id = aux.Id;
                     int checkRadioButton = aux.CheckedRadioButtonId;
-                    TextView tv = FindViewById<TextView>(radioGroups[aux.Id]);
+                    TextView tv = (TextView)linearLayout.GetChildAt(i - 1);
+                    //TextView tv = FindViewById<TextView>(radioGroups[aux.Id]);
                     if (checkRadioButton == -1)
                     {
                         tv.SetBackgroundColor(Color.Red);

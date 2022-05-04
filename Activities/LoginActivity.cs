@@ -11,7 +11,7 @@ using System;
 
 namespace JoseTFG.Activities
 {
-    [Activity(Label = "LoginActivity")]
+    [Activity(Label = "LoginActivity", MainLauncher = true)]
     public class LoginActivity : Activity
     {
         TextInputEditText etUserName;

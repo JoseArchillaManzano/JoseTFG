@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
+using AndroidX.AppCompat.App;
 using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
@@ -12,7 +13,7 @@ using System;
 namespace JoseTFG.Activities
 {
     [Activity(Label = "RegisterActivity")]
-    public class RegisterActivity : Activity
+    public class RegisterActivity : AppCompatActivity
     {
         TextInputEditText etEmail;
         TextInputEditText etUserName;
@@ -26,7 +27,12 @@ namespace JoseTFG.Activities
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.register);
-
+            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetActionBar(toolbar);
+            toolbar.Click += delegate
+            {
+                base.OnBackPressed();
+            };
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
             etConfirmPassword = FindViewById<EditText>(Resource.Id.et_confirm_password);
