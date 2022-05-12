@@ -113,7 +113,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\survey.xml">
+    <AndroidResource Include="Resources\layout\survey_quality_life.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -172,6 +172,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\register.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\survey_sahos.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\survey_epoc.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

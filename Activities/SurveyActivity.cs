@@ -21,7 +21,7 @@ namespace JoseTFG.Activities
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Create your application here
-            SetContentView(Resource.Layout.survey);
+            SetContentView(Resource.Layout.survey_quality_life);
             questions = new List<Question>(Data.AllQuestions.getSurvey());
             linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
             radioGroups = new Dictionary<int, int>();

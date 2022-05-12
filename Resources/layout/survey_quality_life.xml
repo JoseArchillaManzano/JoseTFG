@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/survey">
             <TextView
-                android:text="@string/questions_1"
+                android:text="@string/questions_quality_1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,32 +35,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     
-                    android:text="@string/option_1_1"
+                    android:text="@string/option_quality_1_1"
                     android:id="@+id/radioButton1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_2"
+                    android:text="@string/option_quality_1_2"
                     android:id="@+id/radioButton2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_3"
+                    android:text="@string/option_quality_1_3"
                     android:id="@+id/radioButton3" />
                 <RadioButton
-                    android:text="@string/option_1_4"
+                    android:text="@string/option_quality_1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton4" />
                 <RadioButton
-                    android:text="@string/option_1_5"
+                    android:text="@string/option_quality_1_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton5" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_2"
+                android:text="@string/questions_quality_2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,25 +77,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     
-                    android:text="@string/option_1_1"
+                    android:text="@string/option_quality_1_1"
                     android:id="@+id/radioButton11" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_2"
+                    android:text="@string/option_quality_1_2"
                     android:id="@+id/radioButton12" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_3"
+                    android:text="@string/option_quality_1_3"
                     android:id="@+id/radioButton13" />
                 <RadioButton
-                    android:text="@string/option_1_4"
+                    android:text="@string/option_quality_1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton14" />
                 <RadioButton
-                    android:text="@string/option_1_5"
+                    android:text="@string/option_quality_1_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton15" />
@@ -113,25 +113,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     
-                    android:text="@string/option_1_1"
+                    android:text="@string/option_quality_1_1"
                     android:id="@+id/radioButton6" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_2"
+                    android:text="@string/option_quality_1_2"
                     android:id="@+id/radioButton7" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_3"
+                    android:text="@string/option_quality_1_3"
                     android:id="@+id/radioButton8" />
                 <RadioButton
-                    android:text="@string/option_1_4"
+                    android:text="@string/option_quality_1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton9" />
                 <RadioButton
-                    android:text="@string/option_1_5"
+                    android:text="@string/option_quality_1_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton10" />
@@ -139,7 +139,7 @@
             </RadioGroup>
             
             <TextView
-                android:text="@string/questions_4"
+                android:text="@string/questions_quality_4"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -155,32 +155,32 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_1"
+                    android:text="@string/option_quality_1_1"
                     android:id="@+id/radioButton16" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_2"
+                    android:text="@string/option_quality_1_2"
                     android:id="@+id/radioButton17" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_3"
+                    android:text="@string/option_quality_1_3"
                     android:id="@+id/radioButton18" />
                 <RadioButton
-                    android:text="@string/option_1_4"
+                    android:text="@string/option_quality_1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton19" />
                 <RadioButton
-                    android:text="@string/option_1_5"
+                    android:text="@string/option_quality_1_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton20" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_5"
+                android:text="@string/questions_quality_5"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -196,32 +196,32 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_1"
+                    android:text="@string/option_quality_1_1"
                     android:id="@+id/radioButton21" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_2"
+                    android:text="@string/option_quality_1_2"
                     android:id="@+id/radioButton22" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_1_3"
+                    android:text="@string/option_quality_1_3"
                     android:id="@+id/radioButton23" />
                 <RadioButton
-                    android:text="@string/option_1_4"
+                    android:text="@string/option_quality_1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton24" />
                 <RadioButton
-                    android:text="@string/option_1_5"
+                    android:text="@string/option_quality_1_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton25" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_6"
+                android:text="@string/questions_quality_6"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -237,27 +237,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_6_1"
+                    android:text="@string/option_quality_6_1"
                     android:id="@+id/radioButton26" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_6_2"
+                    android:text="@string/option_quality_6_2"
                     android:id="@+id/radioButton27" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_6_3"
+                    android:text="@string/option_quality_6_3"
                     android:id="@+id/radioButton28" />
                 <RadioButton
-                    android:text="@string/option_6_4"
+                    android:text="@string/option_quality_6_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton29" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_7"
+                android:text="@string/questions_quality_7"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -273,32 +273,32 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_7_1"
+                    android:text="@string/option_quality_7_1"
                     android:id="@+id/radioButton30" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_7_2"
+                    android:text="@string/option_quality_7_2"
                     android:id="@+id/radioButton31" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_7_3"
+                    android:text="@string/option_quality_7_3"
                     android:id="@+id/radioButton32" />
                 <RadioButton
-                    android:text="@string/option_7_4"
+                    android:text="@string/option_quality_7_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton33" />
                 <RadioButton
-                    android:text="@string/option_7_5"
+                    android:text="@string/option_quality_7_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton34" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_8"
+                android:text="@string/questions_quality_8"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -314,17 +314,17 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_8_1"
+                    android:text="@string/option_quality_8_1"
                     android:id="@+id/radioButton35" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_8_2"
+                    android:text="@string/option_quality_8_2"
                     android:id="@+id/radioButton36" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_9"
+                android:text="@string/questions_quality_9"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -340,27 +340,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_9_1"
+                    android:text="@string/option_quality_9_1"
                     android:id="@+id/radioButton37" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_9_2"
+                    android:text="@string/option_quality_9_2"
                     android:id="@+id/radioButton38" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_9_3"
+                    android:text="@string/option_quality_9_3"
                     android:id="@+id/radioButton39" />
                 <RadioButton
-                    android:text="@string/option_9_4"
+                    android:text="@string/option_quality_9_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radioButton40" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_10"
+                android:text="@string/questions_quality_10"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -376,22 +376,22 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_10_1"
+                    android:text="@string/option_quality_10_1"
                     android:id="@+id/radioButton41" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_10_2"
+                    android:text="@string/option_quality_10_2"
                     android:id="@+id/radioButton42" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_10_3"
+                    android:text="@string/option_quality_10_3"
                     android:id="@+id/radioButton43" />
 
             </RadioGroup>
             <TextView
-                android:text="@string/questions_11"
+                android:text="@string/questions_quality_11"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -405,44 +405,44 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout2">
                 <CheckBox
-                    android:text="@string/option_11_1"
+                    android:text="@string/option_quality_11_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox1" />
                 <CheckBox
-                    android:text="@string/option_11_2"
+                    android:text="@string/option_quality_11_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox2" />
                 <CheckBox
-                    android:text="@string/option_11_3"
+                    android:text="@string/option_quality_11_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox3" />
                 <CheckBox
-                    android:text="@string/option_11_4"
+                    android:text="@string/option_quality_11_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox4" />
                 <CheckBox
-                    android:text="@string/option_11_5"
+                    android:text="@string/option_quality_11_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox5" />
                 <CheckBox
-                    android:text="@string/option_11_6"
+                    android:text="@string/option_quality_11_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox6" />
                 <CheckBox
-                    android:text="@string/option_11_7"
+                    android:text="@string/option_quality_11_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox7" />
 
             </LinearLayout>
             <TextView
-                android:text="@string/questions_12"
+                android:text="@string/questions_quality_12"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -456,39 +456,39 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout3">
                 <CheckBox
-                    android:text="@string/option_12_1"
+                    android:text="@string/option_quality_12_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox8" />
                 <CheckBox
-                    android:text="@string/option_12_2"
+                    android:text="@string/option_quality_12_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox9" />
                 <CheckBox
-                    android:text="@string/option_12_3"
+                    android:text="@string/option_quality_12_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox10" />
                 <CheckBox
-                    android:text="@string/option_12_4"
+                    android:text="@string/option_quality_12_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox11" />
                 <CheckBox
-                    android:text="@string/option_12_5"
+                    android:text="@string/option_quality_12_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox12" />
                 <CheckBox
-                    android:text="@string/option_12_6"
+                    android:text="@string/option_quality_12_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox13" />
 
             </LinearLayout>
             <TextView
-                android:text="@string/questions_13"
+                android:text="@string/questions_quality_13"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -502,49 +502,49 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout4">
                 <CheckBox
-                    android:text="@string/option_13_1"
+                    android:text="@string/option_quality_13_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox14" />
                 <CheckBox
-                    android:text="@string/option_13_2"
+                    android:text="@string/option_quality_13_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox15" />
                 <CheckBox
-                    android:text="@string/option_13_3"
+                    android:text="@string/option_quality_13_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox16" />
                 <CheckBox
-                    android:text="@string/option_13_4"
+                    android:text="@string/option_quality_13_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox17" />
                 <CheckBox
-                    android:text="@string/option_13_5"
+                    android:text="@string/option_quality_13_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox18" />
                 <CheckBox
-                    android:text="@string/option_13_6"
+                    android:text="@string/option_quality_13_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox19" />
                 <CheckBox
-                    android:text="@string/option_13_7"
+                    android:text="@string/option_quality_13_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox20" />
                 <CheckBox
-                    android:text="@string/option_13_8"
+                    android:text="@string/option_quality_13_8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox21" />
 
             </LinearLayout>
             <TextView
-                android:text="@string/questions_14"
+                android:text="@string/questions_quality_14"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -558,29 +558,29 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout5">
                 <CheckBox
-                    android:text="@string/option_14_1"
+                    android:text="@string/option_quality_14_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox22" />
                 <CheckBox
-                    android:text="@string/option_14_2"
+                    android:text="@string/option_quality_14_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox23" />
                 <CheckBox
-                    android:text="@string/option_14_3"
+                    android:text="@string/option_quality_14_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox24" />
                 <CheckBox
-                    android:text="@string/option_14_4"
+                    android:text="@string/option_quality_14_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox25" />
                 
             </LinearLayout>
             <TextView
-                android:text="@string/questions_15"
+                android:text="@string/questions_quality_15"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -594,53 +594,53 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout6">
                 <CheckBox
-                    android:text="@string/option_15_1"
+                    android:text="@string/option_quality_15_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox26" />
                 <CheckBox
-                    android:text="@string/option_15_2"
+                    android:text="@string/option_quality_15_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox27" />
                 <CheckBox
-                    android:text="@string/option_15_3"
+                    android:text="@string/option_quality_15_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox28" />
                 <CheckBox
-                    android:text="@string/option_15_4"
+                    android:text="@string/option_quality_15_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox29" />
                 <CheckBox
-                    android:text="@string/option_15_5"
+                    android:text="@string/option_quality_15_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox30" />
                 <CheckBox
-                    android:text="@string/option_15_6"
+                    android:text="@string/option_quality_15_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox31" />
                 <CheckBox
-                    android:text="@string/option_15_7"
+                    android:text="@string/option_quality_15_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox32" />
                 <CheckBox
-                    android:text="@string/option_15_8"
+                    android:text="@string/option_quality_15_8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox33" />
                 <CheckBox
-                    android:text="@string/option_15_9"
+                    android:text="@string/option_quality_15_9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox34" />
             </LinearLayout>
             <TextView
-                android:text="@string/questions_16"
+                android:text="@string/questions_quality_16"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -654,34 +654,34 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout7">
                 <CheckBox
-                    android:text="@string/option_16_1"
+                    android:text="@string/option_quality_16_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox35" />
                 <CheckBox
-                    android:text="@string/option_16_2"
+                    android:text="@string/option_quality_16_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox36" />
                 <CheckBox
-                    android:text="@string/option_16_3"
+                    android:text="@string/option_quality_16_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox37" />
                 <CheckBox
-                    android:text="@string/option_16_4"
+                    android:text="@string/option_quality_16_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox38" />
                 <CheckBox
-                    android:text="@string/option_16_5"
+                    android:text="@string/option_quality_16_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/checkBox39" />
 
             </LinearLayout>
             <TextView
-                android:text="@string/questions_17"
+                android:text="@string/questions_quality_17"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -698,22 +698,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     
-                    android:text="@string/option_17_1"
+                    android:text="@string/option_quality_17_1"
                     android:id="@+id/radioButton44" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_17_2"
+                    android:text="@string/option_quality_17_2"
                     android:id="@+id/radioButton45" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_17_3"
+                    android:text="@string/option_quality_17_3"
                     android:id="@+id/radioButton46" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_17_4"
+                    android:text="@string/option_quality_17_4"
                     android:id="@+id/radioButton47" />
             </RadioGroup>
             <Button

@@ -31,106 +31,145 @@
 	<string name="missing_fields">Faltan campos por rellenar</string>
 	<string name="questions_no_answered">Faltan preguntas por responder</string>
 
-	<string name="questions_1">Durante el último año, he tenido tos</string>
-	<string name="questions_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
-	<string name="questions_3">Durante el último año, he tenido falta de aire</string>
-	<string name="questions_4">Durante el último año, he tenido ataques de silbidos (ruidos en el pecho)</string>
-	<string name="questions_5">Durante el último año ¿cuántos ataques por problemas respiratorios tuvo que fueran graves o muy desagradables?</string>
-	<string name="questions_6">¿Cuánto le duró el peor de los ataques que tuvo por problemas respiratorios? (si no tuvo ningún ataque serio vaya directamente a la pregunta No. 7)</string>
-	<string name="questions_7">Durante el último año ¿cuántos días a la semana fueron buenos?</string>
-	<string name="questions_8">Si tiene silbidos en el pecho (bronquios), ¿son peores por la mañana? (si no tiene silbidos en los pulmones vaya directamente a la pregunta No. 9)</string>
-	<string name="questions_9">¿Cómo describiría usted su condición de los pulmones? Por favor, marque una sola de las siguientes frases:</string>
-	<string name="questions_10">Si ha tenido un trabajo con sueldo. Por favor marque una sola de las siguientes frases: (si no ha tenido un trabajo con sueldo vaya directamente a la pregunta No. 11)</string>
-	<string name="questions_11">A continuación, algunas preguntas sobre otras actividades que normalmente le pueden hacer sentir que le falta la respiración.Por favor, marque todas las respuestas que correspondan a cómo usted está actualmente</string>
-	<string name="questions_12">Algunas preguntas más sobre la tos y la falta de respiración. Por favor, marque todas las respuestas que correspondan a como está usted actualmente:</string>
-	<string name="questions_13">A continuación, algunas preguntas sobre otras consecuencias que sus problemas respiratorios le pueden causar. Por favor, marque todas las respuestas a cómo está usted en estos días:</string>
-	<string name="questions_14">A continuación, algunas preguntas sobre su medicación. (Si no está tomando ningún medicamento, vaya directamente a la pregunta No. 15)</string>
-	<string name="questions_15">Estas preguntas se refieren a cómo sus problemas respiratorios pueden afectar sus actividades. Por favor, marque cierto sí usted cree que una o más partes de cada frase le describen si no, marque falso:</string>
-	<string name="questions_16">Nos gustaría saber ahora cómo sus problemas respiratorios afectan normalmente su vida diaria. Por favor, marque cierto si aplica la frase a usted debido a sus problemas respiratorios:</string>
-	<string name="questions_17">A continuación ¿Podría marcar sólo una frase que usted crea que describe mejor cómo le afectan sus problemas respiratorios?</string>
+	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
+	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
+	<string name="questions_quality_3">Durante el último año, he tenido falta de aire</string>
+	<string name="questions_quality_4">Durante el último año, he tenido ataques de silbidos (ruidos en el pecho)</string>
+	<string name="questions_quality_5">Durante el último año ¿cuántos ataques por problemas respiratorios tuvo que fueran graves o muy desagradables?</string>
+	<string name="questions_quality_6">¿Cuánto le duró el peor de los ataques que tuvo por problemas respiratorios? (si no tuvo ningún ataque serio vaya directamente a la pregunta No. 7)</string>
+	<string name="questions_quality_7">Durante el último año ¿cuántos días a la semana fueron buenos?</string>
+	<string name="questions_quality_8">Si tiene silbidos en el pecho (bronquios), ¿son peores por la mañana? (si no tiene silbidos en los pulmones vaya directamente a la pregunta No. 9)</string>
+	<string name="questions_quality_9">¿Cómo describiría usted su condición de los pulmones? Por favor, marque una sola de las siguientes frases:</string>
+	<string name="questions_quality_10">Si ha tenido un trabajo con sueldo. Por favor marque una sola de las siguientes frases: (si no ha tenido un trabajo con sueldo vaya directamente a la pregunta No. 11)</string>
+	<string name="questions_quality_11">A continuación, algunas preguntas sobre otras actividades que normalmente le pueden hacer sentir que le falta la respiración.Por favor, marque todas las respuestas que correspondan a cómo usted está actualmente</string>
+	<string name="questions_quality_12">Algunas preguntas más sobre la tos y la falta de respiración. Por favor, marque todas las respuestas que correspondan a como está usted actualmente:</string>
+	<string name="questions_quality_13">A continuación, algunas preguntas sobre otras consecuencias que sus problemas respiratorios le pueden causar. Por favor, marque todas las respuestas a cómo está usted en estos días:</string>
+	<string name="questions_quality_14">A continuación, algunas preguntas sobre su medicación. (Si no está tomando ningún medicamento, vaya directamente a la pregunta No. 15)</string>
+	<string name="questions_quality_15">Estas preguntas se refieren a cómo sus problemas respiratorios pueden afectar sus actividades. Por favor, marque cierto sí usted cree que una o más partes de cada frase le describen si no, marque falso:</string>
+	<string name="questions_quality_16">Nos gustaría saber ahora cómo sus problemas respiratorios afectan normalmente su vida diaria. Por favor, marque cierto si aplica la frase a usted debido a sus problemas respiratorios:</string>
+	<string name="questions_quality_17">A continuación ¿Podría marcar sólo una frase que usted crea que describe mejor cómo le afectan sus problemas respiratorios?</string>
 
-	<string name="option_1_1">La mayor parte de los días de la semana</string>
-	<string name="option_1_2">Varios días a la semana</string>
-	<string name="option_1_3">Unos pocos días a la semana</string>
-	<string name="option_1_4">Sólo cuando tuve infección en los pulmones o bronquios</string>
-	<string name="option_1_5">Nada en absoluto</string>
+	<string name="option_quality_1_1">La mayor parte de los días de la semana</string>
+	<string name="option_quality_1_2">Varios días a la semana</string>
+	<string name="option_quality_1_3">Unos pocos días a la semana</string>
+	<string name="option_quality_1_4">Sólo cuando tuve infección en los pulmones o bronquios</string>
+	<string name="option_quality_1_5">Nada en absoluto</string>
 	
-	<string name="option_5_1">Más de tres ataques</string>
-	<string name="option_5_2">Tres ataques</string>
-	<string name="option_5_3">Dos ataques</string>
-	<string name="option_5_4">Un ataque</string>
-	<string name="option_5_5">Ningún ataque</string>
+	<string name="option_quality_5_1">Más de tres ataques</string>
+	<string name="option_quality_5_2">Tres ataques</string>
+	<string name="option_quality_5_3">Dos ataques</string>
+	<string name="option_quality_5_4">Un ataque</string>
+	<string name="option_quality_5_5">Ningún ataque</string>
 	
-	<string name="option_6_1">Una semana o más</string>
-	<string name="option_6_2">De tres a seis días</string>
-	<string name="option_6_3">Uno o dos días</string>
-	<string name="option_6_4">Menos de un día</string>
+	<string name="option_quality_6_1">Una semana o más</string>
+	<string name="option_quality_6_2">De tres a seis días</string>
+	<string name="option_quality_6_3">Uno o dos días</string>
+	<string name="option_quality_6_4">Menos de un día</string>
 	
-	<string name="option_7_1">Ningún día fue bueno</string>
-	<string name="option_7_2">De tres a seis días</string>
-	<string name="option_7_3">Uno o dos días fueron buenos</string>
-	<string name="option_7_4">Casi todos los días</string>
-	<string name="option_7_5">Todos los días han sido buenos</string>
+	<string name="option_quality_7_1">Ningún día fue bueno</string>
+	<string name="option_quality_7_2">De tres a seis días</string>
+	<string name="option_quality_7_3">Uno o dos días fueron buenos</string>
+	<string name="option_quality_7_4">Casi todos los días</string>
+	<string name="option_quality_7_5">Todos los días han sido buenos</string>
 	
-	<string name="option_8_1">No</string>
-	<string name="option_8_2">Si</string>
+	<string name="option_quality_8_1">No</string>
+	<string name="option_quality_8_2">Si</string>
 	
-	<string name="option_9_1">Es el problema más importante que tengo</string>
-	<string name="option_9_2">Me causa bastantes problemas</string>
-	<string name="option_9_3">Me causa pocos problemas</string>
-	<string name="option_9_4">No me causa ningún problema</string>
+	<string name="option_quality_9_1">Es el problema más importante que tengo</string>
+	<string name="option_quality_9_2">Me causa bastantes problemas</string>
+	<string name="option_quality_9_3">Me causa pocos problemas</string>
+	<string name="option_quality_9_4">No me causa ningún problema</string>
 	
-	<string name="option_10_1">Mis problemas respiratorios me obligaron a dejar de trabajar</string>
-	<string name="option_10_2">Mis problemas respiratorios me dificultan mi trabajo o me obligaron a cambiar de trabajo</string>
-	<string name="option_10_3">Mis problemas respiratorios no afectan (o no afectaron) mi trabajo</string>
+	<string name="option_quality_10_1">Mis problemas respiratorios me obligaron a dejar de trabajar</string>
+	<string name="option_quality_10_2">Mis problemas respiratorios me dificultan mi trabajo o me obligaron a cambiar de trabajo</string>
+	<string name="option_quality_10_3">Mis problemas respiratorios no afectan (o no afectaron) mi trabajo</string>
 	
-	<string name="option_11_1">Me falta la respiración estando sentado o incluso descansando</string>
-	<string name="option_11_2">Me falta la respiración cuando me lavo o me visto</string>
-	<string name="option_11_3">Me falta la respiración al caminar dentro de la casa</string>
-	<string name="option_11_4">Me falta la respiración al caminar alrededor de la casa, sobre un terreno plano</string>
-	<string name="option_11_5">Me falta la respiración al subir un tramo de escaleras</string>
-	<string name="option_11_6">Me falta la respiración al caminar de subida</string>
-	<string name="option_11_7">Me falta la respiración al hacer deportes o jugar</string>
+	<string name="option_quality_11_1">Me falta la respiración estando sentado o incluso descansando</string>
+	<string name="option_quality_11_2">Me falta la respiración cuando me lavo o me visto</string>
+	<string name="option_quality_11_3">Me falta la respiración al caminar dentro de la casa</string>
+	<string name="option_quality_11_4">Me falta la respiración al caminar alrededor de la casa, sobre un terreno plano</string>
+	<string name="option_quality_11_5">Me falta la respiración al subir un tramo de escaleras</string>
+	<string name="option_quality_11_6">Me falta la respiración al caminar de subida</string>
+	<string name="option_quality_11_7">Me falta la respiración al hacer deportes o jugar</string>
 	
-	<string name="option_12_1">Me duele al toser</string>
-	<string name="option_12_2">Me canso cuando toso</string>
-	<string name="option_12_3">Me falta la respiración cuando hablo</string>
-	<string name="option_12_4">Me falta la espiración cuando me agacho</string>
-	<string name="option_12_5">La tos o la respiración interrumpen mi sueño</string>
-	<string name="option_12_6">Fácilmente me agoto</string>
+	<string name="option_quality_12_1">Me duele al toser</string>
+	<string name="option_quality_12_2">Me canso cuando toso</string>
+	<string name="option_quality_12_3">Me falta la respiración cuando hablo</string>
+	<string name="option_quality_12_4">Me falta la espiración cuando me agacho</string>
+	<string name="option_quality_12_5">La tos o la respiración interrumpen mi sueño</string>
+	<string name="option_quality_12_6">Fácilmente me agoto</string>
 	
-	<string name="option_13_1">La tos o la respiración me apenan en público</string>
-	<string name="option_13_2">Mis problemas respiratorios son una molestia para mi familia, mis amigos o mis vecinos</string>
-	<string name="option_13_3">Me asusto o me alarmo cuando no puedo respirar</string>
-	<string name="option_13_4">Siento que no puedo controlar mis problemas respiratorios</string>
-	<string name="option_13_5">No espero que mis problemas respiratorios mejoren</string>
-	<string name="option_13_6">Por causa de mis problemas respiratorios me he convertido en una persona insegura o inválida</string>
-	<string name="option_13_7">Hacer ejercicio no es seguro para mí</string>
-	<string name="option_13_8">Cualquier cosa que hago me parece que es un esfuerzo excesivo</string>
+	<string name="option_quality_13_1">La tos o la respiración me apenan en público</string>
+	<string name="option_quality_13_2">Mis problemas respiratorios son una molestia para mi familia, mis amigos o mis vecinos</string>
+	<string name="option_quality_13_3">Me asusto o me alarmo cuando no puedo respirar</string>
+	<string name="option_quality_13_4">Siento que no puedo controlar mis problemas respiratorios</string>
+	<string name="option_quality_13_5">No espero que mis problemas respiratorios mejoren</string>
+	<string name="option_quality_13_6">Por causa de mis problemas respiratorios me he convertido en una persona insegura o inválida</string>
+	<string name="option_quality_13_7">Hacer ejercicio no es seguro para mí</string>
+	<string name="option_quality_13_8">Cualquier cosa que hago me parece que es un esfuerzo excesivo</string>
 	
-	<string name="option_14_1">Mis medicamentos no me ayudan mucho</string>
-	<string name="option_14_2">Me apena usar mis medicamentos en público</string>
-	<string name="option_14_3">Mis medicamentos me producen efectos desagradables</string>
-	<string name="option_14_4">Mis medicamentos afectan mucho mi vida</string>
+	<string name="option_quality_14_1">Mis medicamentos no me ayudan mucho</string>
+	<string name="option_quality_14_2">Me apena usar mis medicamentos en público</string>
+	<string name="option_quality_14_3">Mis medicamentos me producen efectos desagradables</string>
+	<string name="option_quality_14_4">Mis medicamentos afectan mucho mi vida</string>
 	
-	<string name="option_15_1">Me tardo mucho tiempo para lavarme o vestirme</string>
-	<string name="option_15_2">No me puedo bañar o, me tardo mucho tiempo</string>
-	<string name="option_15_3">Camino más despacio que los demás o, tengo que parar a descansar</string>
-	<string name="option_15_4">Tardo mucho para hacer trabajos como las tareas domésticas o, tengo que parar a descansar</string>
-	<string name="option_15_5">Para subir un tramo de escaleras, tengo que ir más despacio o parar</string>
-	<string name="option_15_6">Si corro o camino rápido, tengo que parar o ir más despacio</string>
-	<string name="option_15_7">Mis problemas respiratorios me dificultan hacer cosas tales como, caminar de subida, cargar cosas subiendo escaleras, caminar durante un buen rato, arreglar un poco el jardín, bailar o jugar boliche</string>
-	<string name="option_15_8">Mis problemas respiratorios me dificultan hacer cosas tales como, llevar cosas pesadas, caminar a unos 7 kilómetros por hora, trotar, nadar, jugar tenis, escarbar en el jardín o en el campo</string>
-	<string name="option_15_9">Mis problemas respiratorios me dificultan hacer cosas tales como, un trabajo manual muy pesado, correr, ir en bicicleta, nadar rápido o practicar deportes de competencia</string>
+	<string name="option_quality_15_1">Me tardo mucho tiempo para lavarme o vestirme</string>
+	<string name="option_quality_15_2">No me puedo bañar o, me tardo mucho tiempo</string>
+	<string name="option_quality_15_3">Camino más despacio que los demás o, tengo que parar a descansar</string>
+	<string name="option_quality_15_4">Tardo mucho para hacer trabajos como las tareas domésticas o, tengo que parar a descansar</string>
+	<string name="option_quality_15_5">Para subir un tramo de escaleras, tengo que ir más despacio o parar</string>
+	<string name="option_quality_15_6">Si corro o camino rápido, tengo que parar o ir más despacio</string>
+	<string name="option_quality_15_7">Mis problemas respiratorios me dificultan hacer cosas tales como, caminar de subida, cargar cosas subiendo escaleras, caminar durante un buen rato, arreglar un poco el jardín, bailar o jugar boliche</string>
+	<string name="option_quality_15_8">Mis problemas respiratorios me dificultan hacer cosas tales como, llevar cosas pesadas, caminar a unos 7 kilómetros por hora, trotar, nadar, jugar tenis, escarbar en el jardín o en el campo</string>
+	<string name="option_quality_15_9">Mis problemas respiratorios me dificultan hacer cosas tales como, un trabajo manual muy pesado, correr, ir en bicicleta, nadar rápido o practicar deportes de competencia</string>
 	
-	<string name="option_16_1">No puedo hacer deportes o jugar</string>
-	<string name="option_16_2">No puedo salir a distraerme o divertirme</string>
-	<string name="option_16_3">No puedo salir de casa para ir de compras</string>
-	<string name="option_16_4">No puedo hacer el trabajo de la casa</string>
-	<string name="option_16_5">No puedo alejarme mucho de la cama o la silla</string>
+	<string name="option_quality_16_1">No puedo hacer deportes o jugar</string>
+	<string name="option_quality_16_2">No puedo salir a distraerme o divertirme</string>
+	<string name="option_quality_16_3">No puedo salir de casa para ir de compras</string>
+	<string name="option_quality_16_4">No puedo hacer el trabajo de la casa</string>
+	<string name="option_quality_16_5">No puedo alejarme mucho de la cama o la silla</string>
 	
-	<string name="option_17_1">No me impiden hacer nada de lo que me gustaría hacer</string>
-	<string name="option_17_2">Me impiden hacer una o dos cosas de las que me gustaría hacer</string>
-	<string name="option_17_3">Me impiden hacer la mayoría de las cosas que me gustaría hacer</string>
-	<string name="option_17_4">Me impiden hacer todo lo que me gustaría hacer</string>
+	<string name="option_quality_17_1">No me impiden hacer nada de lo que me gustaría hacer</string>
+	<string name="option_quality_17_2">Me impiden hacer una o dos cosas de las que me gustaría hacer</string>
+	<string name="option_quality_17_3">Me impiden hacer la mayoría de las cosas que me gustaría hacer</string>
+	<string name="option_quality_17_4">Me impiden hacer todo lo que me gustaría hacer</string>
+
+	<string name="questions_sahos_1">¿Usted ronca?</string>
+	<string name="questions_sahos_2">Si su respuesta anterior es “sí”, ¿cuán fuerte ronca?</string>
+	<string name="questions_sahos_3">¿Cuán frecuente ronca?</string>
+	<string name="questions_sahos_4">¿Sus ronquidos han molestado alguna vez a otras personas?</string>
+	<string name="questions_sahos_5">¿Alguien ha notado alguna vez que Ud. deja de respirar mientras duerme?</string>
+	<string name="questions_sahos_6">¿Cuán seguido se siente cansado o fatigado después de dormir?</string>
+	<string name="questions_sahos_7">Al despertar, ¿se siente cansado, fatigado o no listo para empezar el día?</string>
+	<string name="questions_sahos_8">¿Alguna vez ha cabeceado o se ha quedado dormido mientras maneja un vehículo?</string>
+	<string name="questions_sahos_9">Si su respuesta anterior es “sí”, ¿cuán seguido ocurre esto?</string>
+	<string name="questions_sahos_10">¿Sufre de presión arterial alta?</string>
+	<string name="questions_sahos_11">¿Tiene un índice de masa corporal superior a 30?</string>
+
+	<string name="option_sahos_1_1">Si</string>
+	<string name="option_sahos_1_2">No</string>
+
+	<string name="option_sahos_2_1">Levemente más fuerte que al respirar</string>
+	<string name="option_sahos_2_2">Al mismo volumen que al hablar </string>
+	<string name="option_sahos_2_3">Más fuerte que el volumen al hablar</string>
+	<string name="option_sahos_2_4">Tan fuerte que puede escucharse en piezas adyacentes</string>
+
+	<string name="option_sahos_3_1">Casi todos los días </string>
+	<string name="option_sahos_3_2">3 a 4 veces a la semana</string>
+	<string name="option_sahos_3_3">1 o 2 veces por semana</string>
+	<string name="option_sahos_3_4">1 ó 2 veces al mes</string>
+	<string name="option_sahos_3_5">Nunca o casi nunca</string>
+
+	<string name="questions_epoc_1">¿Tose con regularidad? (Bastante veces a lo largo del día)</string>
+	<string name="questions_epoc_2">¿Al toser produce mucosidad?</string>
+	<string name="questions_epoc_3">¿Al respirar se produce un sonido agudo como el de un silbido? (Si tiene sibilancia)</string>
+	<string name="questions_epoc_4">¿Al hacer actividades del día a día, como andar o limpiar el hogar, nota que le falta el aliento?</string>
+	<string name="questions_epoc_5">¿Suele sentir una sensación de presión en el pecho?</string>
+	<string name="questions_epoc_6">¿Es fumador?</string>
+	<string name="questions_epoc_7">¿Está expuesto a entornos donde la calidad del aire no es el adecuado? (Exposición laboral a emisión de gases o polvo)</string>
+	<string name="questions_epoc_8">¿Tiene 40 años o más?</string>
+	<string name="questions_epoc_9">¿Suele resfriarse o padecer de gripe con regularidad?</string>
+
+	<string name="option_epoc_1_1">Si</string>
+	<string name="option_epoc_1_2">No</string>
 </resources>
