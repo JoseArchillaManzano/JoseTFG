@@ -7,7 +7,11 @@ namespace JoseTFG.Models
     {
         public int AnswerPosition { get; set; }
 
-        public QuestionOneSolution(String title, List<String> options, bool noAnswer) : base(title, options, noAnswer)
+        /*public QuestionOneSolution(String title, List<String> options, bool noAnswer) : base(title, options, noAnswer)
+        {
+            this.AnswerPosition = -1;
+        }*/
+        public QuestionOneSolution(String title, List<String> options, bool noAnswer) : base(noAnswer)
         {
             this.AnswerPosition = -1;
         }

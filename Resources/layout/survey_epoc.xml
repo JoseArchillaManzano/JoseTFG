@@ -20,6 +20,8 @@
             <TextView
                 android:text="@string/questions_epoc_1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -34,20 +36,22 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc1" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/option_epoc_1_2"
                     android:id="@+id/radioButtonEpoc2" />
                 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc1" />
             </RadioGroup>
 
             <TextView
                 android:text="@string/questions_epoc_2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -62,19 +66,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc3" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/option_epoc_1_2"
                     android:id="@+id/radioButtonEpoc4" />
                 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc3" />
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_3"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -89,19 +94,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc5" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc6" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc6" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc5" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_4"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -116,19 +122,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc7" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc8" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc8" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc7" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_5"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -143,19 +150,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc9" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc10" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc10" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc9" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_6"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -170,19 +178,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc11" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc12" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc12" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc11" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_7"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -197,19 +206,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc13" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc14" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc14" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc13" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_8"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -224,19 +234,20 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc15" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc16" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc16" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc15" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_epoc_9"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -251,14 +262,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_epoc_1_1"
-                    android:id="@+id/radioButtonEpoc17" />
+                    android:text="@string/option_epoc_1_2"
+                    android:id="@+id/radioButtonEpoc18" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_epoc_1_2"
-                    android:id="@+id/radioButtonEpoc18" />
+                    android:text="@string/option_epoc_1_1"
+                    android:id="@+id/radioButtonEpoc17" />
                 
             </RadioGroup>
             <Button
@@ -267,7 +277,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Button1"
-                android:id="@+id/buttonSendSurveySahos" />
+                android:id="@+id/buttonSendSurveyEpoc" />
             </LinearLayout>
     </ScrollView>
 </LinearLayout>

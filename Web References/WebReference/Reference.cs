@@ -33,6 +33,10 @@ namespace JoseTFG.WebReference {
         
         private System.Threading.SendOrPostCallback RegistrarOperationCompleted;
         
+        private System.Threading.SendOrPostCallback listaEnfermedadesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback riesgoEnfermedadOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -76,6 +80,12 @@ namespace JoseTFG.WebReference {
         
         /// <remarks/>
         public event RegistrarCompletedEventHandler RegistrarCompleted;
+        
+        /// <remarks/>
+        public event listaEnfermedadesCompletedEventHandler listaEnfermedadesCompleted;
+        
+        /// <remarks/>
+        public event riesgoEnfermedadCompletedEventHandler riesgoEnfermedadCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EstaRegistrado", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -144,6 +154,64 @@ namespace JoseTFG.WebReference {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/listaEnfermedades", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public Enfermedad[] listaEnfermedades() {
+            object[] results = this.Invoke("listaEnfermedades", new object[0]);
+            return ((Enfermedad[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void listaEnfermedadesAsync() {
+            this.listaEnfermedadesAsync(null);
+        }
+        
+        /// <remarks/>
+        public void listaEnfermedadesAsync(object userState) {
+            if ((this.listaEnfermedadesOperationCompleted == null)) {
+                this.listaEnfermedadesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnlistaEnfermedadesOperationCompleted);
+            }
+            this.InvokeAsync("listaEnfermedades", new object[0], this.listaEnfermedadesOperationCompleted, userState);
+        }
+        
+        private void OnlistaEnfermedadesOperationCompleted(object arg) {
+            if ((this.listaEnfermedadesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.listaEnfermedadesCompleted(this, new listaEnfermedadesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/riesgoEnfermedad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string riesgoEnfermedad(string enfermedad, int[] respuestas) {
+            object[] results = this.Invoke("riesgoEnfermedad", new object[] {
+                        enfermedad,
+                        respuestas});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void riesgoEnfermedadAsync(string enfermedad, int[] respuestas) {
+            this.riesgoEnfermedadAsync(enfermedad, respuestas, null);
+        }
+        
+        /// <remarks/>
+        public void riesgoEnfermedadAsync(string enfermedad, int[] respuestas, object userState) {
+            if ((this.riesgoEnfermedadOperationCompleted == null)) {
+                this.riesgoEnfermedadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnriesgoEnfermedadOperationCompleted);
+            }
+            this.InvokeAsync("riesgoEnfermedad", new object[] {
+                        enfermedad,
+                        respuestas}, this.riesgoEnfermedadOperationCompleted, userState);
+        }
+        
+        private void OnriesgoEnfermedadOperationCompleted(object arg) {
+            if ((this.riesgoEnfermedadCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.riesgoEnfermedadCompleted(this, new riesgoEnfermedadCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -159,6 +227,75 @@ namespace JoseTFG.WebReference {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Enfermedad {
+        
+        private int idField;
+        
+        private string nombreField;
+        
+        private string desField;
+        
+        private string[] sintomasField;
+        
+        private string[] sintomasField1;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string des {
+            get {
+                return this.desField;
+            }
+            set {
+                this.desField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] sintomas {
+            get {
+                return this.sintomasField;
+            }
+            set {
+                this.sintomasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] Sintomas {
+            get {
+                return this.sintomasField1;
+            }
+            set {
+                this.sintomasField1 = value;
+            }
         }
     }
     
@@ -210,6 +347,58 @@ namespace JoseTFG.WebReference {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void listaEnfermedadesCompletedEventHandler(object sender, listaEnfermedadesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class listaEnfermedadesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal listaEnfermedadesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Enfermedad[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Enfermedad[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void riesgoEnfermedadCompletedEventHandler(object sender, riesgoEnfermedadCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class riesgoEnfermedadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal riesgoEnfermedadCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
             }
         }
     }

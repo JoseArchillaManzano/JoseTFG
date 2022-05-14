@@ -27,12 +27,6 @@ namespace JoseTFG.Activities
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.register);
-            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetActionBar(toolbar);
-            toolbar.Click += delegate
-            {
-                base.OnBackPressed();
-            };
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
             etConfirmPassword = FindViewById<EditText>(Resource.Id.et_confirm_password);
@@ -83,7 +77,7 @@ namespace JoseTFG.Activities
                 bool result = ws.Registrar(textUser, textPassword, "usuario", textEmail);
                 if (result)
                 {
-                    Intent intent = new Intent(this, typeof(SurveyActivity));
+                    Intent intent = new Intent(this, typeof(MenuActivity));
                     StartActivity(intent);
                     Finish();
                 }

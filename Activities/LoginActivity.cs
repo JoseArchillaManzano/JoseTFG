@@ -53,7 +53,7 @@ namespace JoseTFG.Activities
             }
             if (ws.EstaRegistrado(etUserName.Text, etPassword.Text))
             {
-                Intent intent = new Intent(this, typeof(SurveyActivity));
+                Intent intent = new Intent(this, typeof(MenuActivity));
                 StartActivity(intent);
                 Finish();
             }

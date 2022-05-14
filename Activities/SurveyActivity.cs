@@ -1,8 +1,10 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Graphics;
 using Android.OS;
 using Android.Widget;
 using JoseTFG.Models;
+using JoseTFG.WebReference;
 using System;
 using System.Collections.Generic;
 
@@ -13,77 +15,42 @@ namespace JoseTFG.Activities
     {
         List<Question> questions;
         LinearLayout linearLayout;
-        Dictionary<int, int> radioGroups;
-        Dictionary<int, int> checkBoxes;
         Button bSurvey;
+        int[] resultTest;
+        WS_Breathing ws;
+        string option;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Create your application here
-            SetContentView(Resource.Layout.survey_quality_life);
-            questions = new List<Question>(Data.AllQuestions.getSurvey());
-            linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
-            radioGroups = new Dictionary<int, int>();
-            checkBoxes = new Dictionary<int, int>();
-            bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
-            bSurvey.Click += checkSurvey;
-            //PrepareSurvey();
-        }
-
-        /*private void PrepareSurvey()
-        {
-            float di = 10 * this.Resources.DisplayMetrics.Density;
-            int padding = (int)Math.Round(di);
-            int contador = 0;
-            foreach (Question q in questions)
+            option = Intent.GetStringExtra("option");
+            if (option == "sahos")
             {
-                contador += 10;
-                TextView title = new TextView(BaseContext);
-                title.Text = q.Title;
-                title.Id = contador;
-                title.SetTextColor(Color.Black);
-                title.SetPadding(padding, padding, padding, padding);
-                title.SetTextSize(Android.Util.ComplexUnitType.Dip, 20);
-                linearLayout.AddView(title);
-                if (q is QuestionOneSolution)
-                {
-                    RadioGroup rg = new RadioGroup(BaseContext);
-                    rg.Id = contador * 100;
-                    radioGroups.Add(rg.Id, title.Id);
-                    for (int i = 1; i <= q.Options.Count; i++)
-                    {
-                        RadioButton rb = new RadioButton(BaseContext);
-                        rb.Id = contador + i;
-                        rb.Text = q.Options[i - 1];
-                        rb.SetPadding(0, 6, 0, 6);
-                        rg.AddView(rb);
-                    }
-                    linearLayout.AddView(rg);
-
-                }
-                else
-                {
-                    LinearLayout ll = new LinearLayout(BaseContext);
-                    ll.Orientation = Orientation.Vertical;
-                    ll.Id = contador * 100;
-                    checkBoxes.Add(ll.Id, title.Id);
-                    for (int i = 1; i <= q.Options.Count; i++)
-                    {
-                        CheckBox c = new CheckBox(BaseContext);
-                        c.Text = q.Options[i - 1];
-                        c.SetPadding(0, 6, 0, 6);
-                        ll.AddView(c);
-                    }
-                    linearLayout.AddView(ll);
-                }
+                SetContentView(Resource.Layout.survey_sahos);
+                linearLayout = FindViewById<LinearLayout>(Resource.Id.surveySahos);
+                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveySahos);
             }
-            Button sendSurvey = new Button(new ContextThemeWrapper(this, Resource.Style.Button1), null, 0);
-            sendSurvey.Text = Resources.GetString(Resource.String.button_send);
-            sendSurvey.SetPadding(0, padding, 0, padding);
-            sendSurvey.Click += checkSurvey;
-            linearLayout.AddView(sendSurvey);
-        }*/
+            else if (option == "epoc")
+            {
+                SetContentView(Resource.Layout.survey_epoc);
+                linearLayout = FindViewById<LinearLayout>(Resource.Id.surveyEpoc);
+                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveyEpoc);
+            }
+
+            else
+            {
+                SetContentView(Resource.Layout.survey_quality_life);
+                linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
+                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
+            }
+
+
+            // questions = new List<Question>(Data.AllQuestions.getSurvey());
+            bSurvey.Click += checkSurvey;
+            resultTest = new int[linearLayout.ChildCount / 2];
+            ws = new WS_Breathing();
+        }
 
         private void checkSurvey(object sender, EventArgs eventArgs)
         {
@@ -91,8 +58,8 @@ namespace JoseTFG.Activities
             for (int i = 1; i < linearLayout.ChildCount; i += 2)
             {
                 var child = linearLayout.GetChildAt(i);
-                Question q = questions[i / 2];
-                if (q.NoAnswer) continue;
+                // Question q = questions[i / 2];
+                //if (q.NoAnswer) continue; //:TODO QUIZAS HAYA QUE DEJARLO
 
                 if (child is RadioGroup)
                 {
@@ -100,7 +67,6 @@ namespace JoseTFG.Activities
                     var id = aux.Id;
                     int checkRadioButton = aux.CheckedRadioButtonId;
                     TextView tv = (TextView)linearLayout.GetChildAt(i - 1);
-                    //TextView tv = FindViewById<TextView>(radioGroups[aux.Id]);
                     if (checkRadioButton == -1)
                     {
                         tv.SetBackgroundColor(Color.Red);
@@ -130,26 +96,41 @@ namespace JoseTFG.Activities
                 var child = linearLayout.GetChildAt(i);
                 if (child is RadioGroup)
                 {
-                    QuestionOneSolution q = (QuestionOneSolution)questions[i / 2];
+                    // QuestionOneSolution q = (QuestionOneSolution)questions[i / 2];
                     RadioGroup aux = (RadioGroup)child;
                     int checkRadioButton = aux.CheckedRadioButtonId;
                     if (checkRadioButton != -1)
                     {
-                        q.AnswerPosition = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
+                        //q.AnswerPosition = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
+                        resultTest[i / 2] = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
                     }
                 }
                 else if (child is LinearLayout j)
                 {
 
-                    QuestionMultipleSolutions q = (QuestionMultipleSolutions)questions[i / 2];
+                    // QuestionMultipleSolutions q = (QuestionMultipleSolutions)questions[i / 2];
                     for (int y = 0; y < j.ChildCount; y++)
                     {
                         CheckBox c = (CheckBox)j.GetChildAt(y);
-                        q.Answers.Add(c.Checked);
+                        // q.Answers.Add(c.Checked);
                     }
                 }
             }
-            List<Question> borrar = new List<Question>(questions);
+            consultResults();
+        }
+
+        private void consultResults()
+        {
+            Enfermedad[] enfermedades = ws.listaEnfermedades();
+            Enfermedad e = option == "sahos" ? enfermedades[0] : enfermedades[1];
+
+            var risk = ws.riesgoEnfermedad(e.nombre, resultTest);
+
+            Intent intent = new Intent(this, typeof(ResultActivity));
+            intent.PutExtra("risk", risk);
+            StartActivity(intent);
+            Finish();
+
         }
     }
 }

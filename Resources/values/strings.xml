@@ -30,7 +30,20 @@
 	<string name="mismatched_password">Las contraseñas no coinciden entre si</string>
 	<string name="missing_fields">Faltan campos por rellenar</string>
 	<string name="questions_no_answered">Faltan preguntas por responder</string>
+	
+	<string name="sahos_menu">Cuestionario Sahos</string>
+	<string name="epoc_menu">Cuestionario EPOC</string>
+	<string name="text_result">El resultado del cuestionario es:</string>
+	
+	<string name="risk_high">Alta probabilidad de padecer la enfermedad</string>
+	<string name="risk_low">Baja probabilidad de padecer la enfermedad</string>
+	<string name="risk_nonexistent">Probabilidad casi nula de padecer la enfermedad</string>
+	
+	<string name="text_high">Le recomendamos que vaya ante un especialista en el menor tiempo posible.</string>
+	<string name="text_low">Le recomendamos que vaya a su médico de cabecera para hacerse algunos analisis y pruebas rutinarias para descartar posibles riesgos.</string>
+	<string name="text_nonexistent">Usted parece estar saludable. Pero le recomendamos que periodicamente se realice análisis rutinarios. Solo por salud y precaución.</string>
 
+	
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
 	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
 	<string name="questions_quality_3">Durante el último año, he tenido falta de aire</string>

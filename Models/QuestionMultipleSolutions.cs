@@ -12,6 +12,7 @@ namespace JoseTFG.Models
             this.Answers[position] = answer;
         }
 
-        public QuestionMultipleSolutions(String title, List<String> options, bool noAnswer) : base(title, options, noAnswer) { }
+        //public QuestionMultipleSolutions(String title, List<String> options, bool noAnswer) : base(title, options, noAnswer) { }
+        public QuestionMultipleSolutions(bool noAnswer) : base(noAnswer) { }
     }
 }

@@ -20,6 +20,8 @@
             <TextView
                 android:text="@string/questions_sahos_1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -34,20 +36,21 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_1_1"
-                    android:id="@+id/radioButtonSahos1" />
+                    android:text="@string/option_sahos_1_2"
+                    android:id="@+id/radioButtonSahos2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_1_2"
-                    android:id="@+id/radioButtonSahos2" />
+                    android:text="@string/option_sahos_1_1"
+                    android:id="@+id/radioButtonSahos1" />
                 
             </RadioGroup>
 
             <TextView
                 android:text="@string/questions_sahos_2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -86,6 +89,8 @@
              <TextView
                 android:text="@string/questions_sahos_3"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -129,6 +134,8 @@
             <TextView
                 android:text="@string/questions_sahos_4"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -143,19 +150,21 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_1_1"
-                    android:id="@+id/radioButtonSahos12" />
+                    android:text="@string/option_sahos_1_2"
+                    android:id="@+id/radioButtonSahos13" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_1_2"
-                    android:id="@+id/radioButtonSahos13" />
+                    
+                    android:text="@string/option_sahos_1_1"
+                    android:id="@+id/radioButtonSahos12" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_sahos_5"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -199,6 +208,8 @@
             <TextView
                 android:text="@string/questions_sahos_6"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -242,6 +253,8 @@
             <TextView
                 android:text="@string/questions_sahos_7"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -286,6 +299,8 @@
             <TextView
                 android:text="@string/questions_sahos_8"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -300,19 +315,67 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_1_1"
-                    android:id="@+id/radioButtonSahos28" />
+                    android:text="@string/option_sahos_1_2"
+                    android:id="@+id/radioButtonSahos29" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_1_2"
-                    android:id="@+id/radioButtonSahos29" />
+                    
+                    android:text="@string/option_sahos_1_1"
+                    android:id="@+id/radioButtonSahos28" />
+                
+            </RadioGroup>
+
+            <TextView
+                android:text="@string/questions_sahos_9"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/textViewSahos9" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/radioGroupSahos9">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos34" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos35" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/option_sahos_3_3"
+                    android:id="@+id/radioButtonSahos36" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_4"
+                    android:id="@+id/radioButtonSahos37" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos38" />
                 
             </RadioGroup>
             <TextView
                 android:text="@string/questions_sahos_10"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -327,19 +390,21 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_1_1"
-                    android:id="@+id/radioButtonSahos30" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/option_sahos_1_2"
                     android:id="@+id/radioButtonSahos31" />
                 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/option_sahos_1_1"
+                    android:id="@+id/radioButtonSahos30" />
             </RadioGroup>
             <TextView
                 android:text="@string/questions_sahos_11"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -354,15 +419,15 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_1_1"
-                    android:id="@+id/radioButtonSahos32" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/option_sahos_1_2"
                     android:id="@+id/radioButtonSahos33" />
                 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/option_sahos_1_1"
+                    android:id="@+id/radioButtonSahos32" />
             </RadioGroup>
 
             <Button
