@@ -24,14 +24,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos1" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos1">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -53,14 +54,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos2" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos2">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -93,14 +95,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos3" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos3">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -138,14 +141,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos4" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos4">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -167,14 +171,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos5" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos5">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -212,14 +217,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos6" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos6">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -257,14 +263,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos7" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos7">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -303,14 +310,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos8" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos8">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -333,14 +341,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos9" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos9">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -378,14 +387,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos10" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos10">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -407,14 +417,15 @@
                 android:textColor="@color/md_black_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:id="@+id/textViewSahos11" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/radioGroupSahos11">
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -431,7 +442,7 @@
             </RadioGroup>
 
             <Button
-                android:layout_margin="5dp"
+                android:layout_margin="20dp"
                 android:text="@string/button_send"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

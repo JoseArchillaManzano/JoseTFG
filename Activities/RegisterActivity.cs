@@ -27,6 +27,13 @@ namespace JoseTFG.Activities
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.register);
+            var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            //toolbar.SetNavigationOnClickListener( base.OnBackPressed());
+            toolbar.Click += delegate
+            {
+                base.OnBackPressed();
+            };
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
             etConfirmPassword = FindViewById<EditText>(Resource.Id.et_confirm_password);

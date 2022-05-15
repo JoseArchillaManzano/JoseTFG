@@ -43,6 +43,7 @@
 	<string name="text_low">Le recomendamos que vaya a su médico de cabecera para hacerse algunos analisis y pruebas rutinarias para descartar posibles riesgos.</string>
 	<string name="text_nonexistent">Usted parece estar saludable. Pero le recomendamos que periodicamente se realice análisis rutinarios. Solo por salud y precaución.</string>
 
+	<string name="result_back">Volver</string>
 	
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
 	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
