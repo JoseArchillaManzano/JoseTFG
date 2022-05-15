@@ -1,6 +1,9 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Widget;
+using System;
+
 namespace JoseTFG.Activities
 {
     [Activity(Label = "ResultActivity")]
@@ -8,6 +11,7 @@ namespace JoseTFG.Activities
     {
         TextView tRisk;
         TextView tIndication;
+        Button bBack;
         string risk;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -17,6 +21,8 @@ namespace JoseTFG.Activities
             SetContentView(Resource.Layout.result);
             tRisk = FindViewById<TextView>(Resource.Id.textRisk);
             tIndication = FindViewById<TextView>(Resource.Id.textIndication);
+            bBack = FindViewById<Button>(Resource.Id.bBackResult);
+            bBack.Click += backMenu;
             risk = Intent.GetStringExtra("risk");
 
             if (risk == "ALTO RIESO")
@@ -43,6 +49,13 @@ namespace JoseTFG.Activities
                 //tRisk.SetTextColor(Android.Graphics.Color.ForestGreen);
                 tIndication.Text = Resources.GetString(Resource.String.text_nonexistent);
             }
+        }
+
+        private void backMenu(object sender, EventArgs eventArgs)
+        {
+            Intent intent = new Intent(this, typeof(MenuActivity));
+            StartActivity(intent);
+            Finish();
         }
     }
 }

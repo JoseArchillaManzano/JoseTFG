@@ -5243,56 +5243,56 @@ namespace JoseTFG
 			// aapt resource value: 0x7F080051
 			public const int autoCompleteToStart = 2131230801;
 			
-			// aapt resource value: 0x7F080052
-			public const int barrier = 2131230802;
-			
 			// aapt resource value: 0x7F080053
-			public const int baseline = 2131230803;
-			
-			// aapt resource value: 0x7F080055
-			public const int beginning = 2131230805;
+			public const int barrier = 2131230803;
 			
 			// aapt resource value: 0x7F080054
-			public const int beginOnFirstDraw = 2131230804;
+			public const int baseline = 2131230804;
+			
+			// aapt resource value: 0x7F080052
+			public const int bBackResult = 2131230802;
 			
 			// aapt resource value: 0x7F080056
-			public const int bestChoice = 2131230806;
+			public const int beginning = 2131230806;
+			
+			// aapt resource value: 0x7F080055
+			public const int beginOnFirstDraw = 2131230805;
 			
 			// aapt resource value: 0x7F080057
-			public const int blocking = 2131230807;
+			public const int bestChoice = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int bottom = 2131230808;
+			public const int blocking = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int bounce = 2131230809;
+			public const int bottom = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int bounceBoth = 2131230810;
+			public const int bounce = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int bounceEnd = 2131230811;
+			public const int bounceBoth = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int bounceStart = 2131230812;
+			public const int bounceEnd = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int browser_actions_header_text = 2131230813;
-			
-			// aapt resource value: 0x7F080060
-			public const int browser_actions_menu_items = 2131230816;
+			public const int bounceStart = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int browser_actions_menu_item_icon = 2131230814;
-			
-			// aapt resource value: 0x7F08005F
-			public const int browser_actions_menu_item_text = 2131230815;
+			public const int browser_actions_header_text = 2131230814;
 			
 			// aapt resource value: 0x7F080061
-			public const int browser_actions_menu_view = 2131230817;
+			public const int browser_actions_menu_items = 2131230817;
+			
+			// aapt resource value: 0x7F08005F
+			public const int browser_actions_menu_item_icon = 2131230815;
+			
+			// aapt resource value: 0x7F080060
+			public const int browser_actions_menu_item_text = 2131230816;
 			
 			// aapt resource value: 0x7F080062
-			public const int button = 2131230818;
+			public const int browser_actions_menu_view = 2131230818;
 			
 			// aapt resource value: 0x7F080063
 			public const int buttonPanel = 2131230819;
