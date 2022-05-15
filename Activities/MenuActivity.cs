@@ -30,6 +30,7 @@ namespace JoseTFG.Activities
             Intent intent = new Intent(this, typeof(SurveyActivity));
             intent.PutExtra("option", "sahos");
             StartActivity(intent);
+            Finish();
         }
 
         private void startEpocTest(object sender, EventArgs eventArgs)
@@ -37,6 +38,7 @@ namespace JoseTFG.Activities
             Intent intent = new Intent(this, typeof(SurveyActivity));
             intent.PutExtra("option", "epoc");
             StartActivity(intent);
+            Finish();
         }
     }
 }

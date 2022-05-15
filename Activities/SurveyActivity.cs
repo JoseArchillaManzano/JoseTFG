@@ -2,16 +2,20 @@
 using Android.Content;
 using Android.Graphics;
 using Android.OS;
+using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
 using JoseTFG.Models;
 using JoseTFG.WebReference;
 using System;
+
 using System.Collections.Generic;
+using static Android.Views.View;
 
 namespace JoseTFG.Activities
 {
     [Activity(Label = "SurveyActivity")]
-    public class SurveyActivity : Activity
+    public class SurveyActivity : AppCompatActivity, IOnClickListener
     {
         List<Question> questions;
         LinearLayout linearLayout;
@@ -19,11 +23,28 @@ namespace JoseTFG.Activities
         int[] resultTest;
         WS_Breathing ws;
         string option;
+        Android.App.AlertDialog.Builder alert;
+        Dialog dialog;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             // Create your application here
+
+            alert = new Android.App.AlertDialog.Builder(this);
+            alert.SetTitle(Resources.GetString(Resource.String.title_dialog_survey));
+            alert.SetMessage(Resources.GetString(Resource.String.message_dialog_survey));
+            alert.SetPositiveButton(Resources.GetString(Resource.String.confirm_dialog_survey), (senderAlert, args) =>
+            {
+                Intent intent = new Intent(this, typeof(MenuActivity));
+                StartActivity(intent);
+                Finish();
+            });
+            alert.SetNegativeButton(Resources.GetString(Resource.String.cancel_dialog_survey), (senderAlert, args) => { });
+
+            dialog = alert.Create();
+
             option = Intent.GetStringExtra("option");
             if (option == "sahos")
             {
@@ -43,7 +64,11 @@ namespace JoseTFG.Activities
                 SetContentView(Resource.Layout.survey_quality_life);
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
+
             }
+            var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            toolbar.SetNavigationOnClickListener(this);
 
 
             // questions = new List<Question>(Data.AllQuestions.getSurvey());
@@ -132,5 +157,11 @@ namespace JoseTFG.Activities
             Finish();
 
         }
+        public void OnClick(View v)
+        {
+            dialog.Show();
+        }
+
+
     }
 }

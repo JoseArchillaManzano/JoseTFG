@@ -39,11 +39,16 @@
 	<string name="risk_low">Baja probabilidad de padecer la enfermedad</string>
 	<string name="risk_nonexistent">Probabilidad casi nula de padecer la enfermedad</string>
 	
-	<string name="text_high">Le recomendamos que vaya ante un especialista en el menor tiempo posible.</string>
-	<string name="text_low">Le recomendamos que vaya a su médico de cabecera para hacerse algunos analisis y pruebas rutinarias para descartar posibles riesgos.</string>
+	<string name="text_high">Le recomendamos que acuda a un especialista en el menor tiempo posible.</string>
+	<string name="text_low">Le recomendamos que acuda a su médico de cabecera para realizar algunos analisis y pruebas rutinarias que permitan descartar posibles riesgos.</string>
 	<string name="text_nonexistent">Usted parece estar saludable. Pero le recomendamos que periodicamente se realice análisis rutinarios. Solo por salud y precaución.</string>
 
 	<string name="result_back">Volver</string>
+	
+	<string name="title_dialog_survey">Cancelar cuestionario</string>
+	<string name="message_dialog_survey">¿Está seguro que desea cancelar el cuestionario? Los cambios realizados no se guardarán</string>
+	<string name="confirm_dialog_survey">Confirmar</string>
+	<string name="cancel_dialog_survey">Seguir con el cuestionario</string>
 	
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
 	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>

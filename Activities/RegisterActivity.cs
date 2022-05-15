@@ -9,11 +9,12 @@ using AndroidX.AppCompat.App;
 using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
+using static Android.Views.View;
 
 namespace JoseTFG.Activities
 {
     [Activity(Label = "RegisterActivity")]
-    public class RegisterActivity : AppCompatActivity
+    public class RegisterActivity : AppCompatActivity, IOnClickListener
     {
         TextInputEditText etEmail;
         TextInputEditText etUserName;
@@ -29,11 +30,7 @@ namespace JoseTFG.Activities
             SetContentView(Resource.Layout.register);
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            //toolbar.SetNavigationOnClickListener( base.OnBackPressed());
-            toolbar.Click += delegate
-            {
-                base.OnBackPressed();
-            };
+            toolbar.SetNavigationOnClickListener(this);
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
             etConfirmPassword = FindViewById<EditText>(Resource.Id.et_confirm_password);
@@ -107,6 +104,11 @@ namespace JoseTFG.Activities
             {
                 return false;
             }
+        }
+
+        public void OnClick(View v)
+        {
+            base.OnBackPressed();
         }
     }
 }
