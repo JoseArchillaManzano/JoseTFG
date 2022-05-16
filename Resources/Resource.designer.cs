@@ -7775,7 +7775,19 @@ namespace JoseTFG
 			public const int title_dialog_survey = 2131558603;
 			
 			// aapt resource value: 0x7F0D00CC
-			public const int user_already_registered = 2131558604;
+			public const int title_epoc_sahos = 2131558604;
+			
+			// aapt resource value: 0x7F0D00CD
+			public const int title_quality_sahos = 2131558605;
+			
+			// aapt resource value: 0x7F0D00CE
+			public const int title_register = 2131558606;
+			
+			// aapt resource value: 0x7F0D00CF
+			public const int title_survey_sahos = 2131558607;
+			
+			// aapt resource value: 0x7F0D00D0
+			public const int user_already_registered = 2131558608;
 			
 			static String()
 			{

@@ -25,6 +25,7 @@ namespace JoseTFG.Activities
         string option;
         Android.App.AlertDialog.Builder alert;
         Dialog dialog;
+        string title = "";
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -51,12 +52,14 @@ namespace JoseTFG.Activities
                 SetContentView(Resource.Layout.survey_sahos);
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.surveySahos);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveySahos);
+                title = GetString(Resource.String.title_survey_sahos);
             }
             else if (option == "epoc")
             {
                 SetContentView(Resource.Layout.survey_epoc);
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.surveyEpoc);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveyEpoc);
+                title = GetString(Resource.String.title_epoc_sahos);
             }
 
             else
@@ -64,11 +67,13 @@ namespace JoseTFG.Activities
                 SetContentView(Resource.Layout.survey_quality_life);
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
+                title = GetString(Resource.String.title_quality_sahos);
 
             }
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.SetNavigationOnClickListener(this);
+            SupportActionBar.Title = title;
 
 
             // questions = new List<Question>(Data.AllQuestions.getSurvey());

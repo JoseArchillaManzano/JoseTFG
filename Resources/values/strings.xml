@@ -49,6 +49,11 @@
 	<string name="message_dialog_survey">¿Está seguro que desea cancelar el cuestionario? Los cambios realizados no se guardarán</string>
 	<string name="confirm_dialog_survey">Confirmar</string>
 	<string name="cancel_dialog_survey">Seguir con el cuestionario</string>
+
+	<string name="title_survey_sahos">Cuestionario Sahos</string>
+	<string name="title_epoc_sahos">Cuestionario EPOC</string>
+	<string name="title_quality_sahos">Cuestionario EPOC</string>
+	<string name="title_register">Registro</string>
 	
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
 	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
