@@ -25,7 +25,7 @@ namespace JoseTFG.Activities
             timer = new Timer(100);
             // Hook up the Elapsed event for the timer. 
             timer.Elapsed += OnTimedEvent;
-            timer.AutoReset = true;
+            timer.AutoReset = false;
             timer.Enabled = true;
         }
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
@@ -34,6 +34,7 @@ namespace JoseTFG.Activities
             StartActivity(intent);
             timer.Stop();
             timer.Dispose();
+            timer = null;
             Finish();
         }
 
