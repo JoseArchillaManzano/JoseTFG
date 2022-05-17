@@ -71,6 +71,8 @@
     <Compile Include="Activities\ResultActivity.cs" />
     <Compile Include="Activities\SurveyActivity.cs" />
     <Compile Include="Data\AllQuestions.cs" />
+    <Compile Include="Data\EpocQuestion.cs" />
+    <Compile Include="Data\SahosQuestion.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionMultipleSolutions.cs" />
     <Compile Include="Models\QuestionOneSolution.cs" />

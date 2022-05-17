@@ -53,6 +53,7 @@ namespace JoseTFG.Activities
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.surveySahos);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveySahos);
                 title = GetString(Resource.String.title_survey_sahos);
+                questions = new List<Question>(Data.SahosQuestion.getSahosSurvey());
             }
             else if (option == "epoc")
             {
@@ -60,6 +61,7 @@ namespace JoseTFG.Activities
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.surveyEpoc);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveyEpoc);
                 title = GetString(Resource.String.title_epoc_sahos);
+                questions = new List<Question>(Data.EpocQuestion.getEpocSurvey());
             }
 
             else
@@ -68,6 +70,8 @@ namespace JoseTFG.Activities
                 linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
                 title = GetString(Resource.String.title_quality_sahos);
+                //questions = new List<Question>(Data.AllQuestions.getEpocSurvey());
+
 
             }
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
@@ -75,8 +79,6 @@ namespace JoseTFG.Activities
             toolbar.SetNavigationOnClickListener(this);
             SupportActionBar.Title = title;
 
-
-            // questions = new List<Question>(Data.AllQuestions.getSurvey());
             bSurvey.Click += checkSurvey;
             resultTest = new int[linearLayout.ChildCount / 2];
             ws = new WS_Breathing();
@@ -88,8 +90,8 @@ namespace JoseTFG.Activities
             for (int i = 1; i < linearLayout.ChildCount; i += 2)
             {
                 var child = linearLayout.GetChildAt(i);
-                // Question q = questions[i / 2];
-                //if (q.NoAnswer) continue; //:TODO QUIZAS HAYA QUE DEJARLO
+                Question q = questions[i / 2];
+                if (q.NoAnswer) continue;
 
                 if (child is RadioGroup)
                 {
@@ -126,13 +128,13 @@ namespace JoseTFG.Activities
                 var child = linearLayout.GetChildAt(i);
                 if (child is RadioGroup)
                 {
-                    // QuestionOneSolution q = (QuestionOneSolution)questions[i / 2];
+                    QuestionOneSolution q = (QuestionOneSolution)questions[i / 2];
                     RadioGroup aux = (RadioGroup)child;
                     int checkRadioButton = aux.CheckedRadioButtonId;
                     if (checkRadioButton != -1)
                     {
-                        //q.AnswerPosition = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
-                        resultTest[i / 2] = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
+                        q.AnswerPosition = aux.IndexOfChild(FindViewById<RadioButton>(checkRadioButton));
+                        resultTest[i / 2] = q.getPunctuation();
                     }
                 }
                 else if (child is LinearLayout j)
@@ -167,6 +169,9 @@ namespace JoseTFG.Activities
             dialog.Show();
         }
 
-
+        public override void OnBackPressed()
+        {
+            dialog.Show();
+        }
     }
 }
