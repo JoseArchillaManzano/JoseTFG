@@ -12,6 +12,7 @@ namespace JoseTFG.Activities
         Button bSahos;
         Button bEpoc;
 
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

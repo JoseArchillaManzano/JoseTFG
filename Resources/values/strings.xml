@@ -55,6 +55,19 @@
 	<string name="title_quality_sahos">Cuestionario EPOC</string>
 	<string name="title_register">Registro</string>
 	
+	<string name="text_menu_epoc">
+		La enfermedad pulmonar obstructiva crónica (EPOC) 
+		es un grupo de enfermedades pulmonares que dificultan la respiración y empeoran con el tiempo. 
+		Algunos de los sintomas son: tos, sibilancias, silbidos al respirar o sensación de presión en el pecho
+	</string>
+	<string name="text_menu_sahos">
+		El SAHOS es una enfermedad causada por episodios repetitivos de cierre (apneas)
+		o estrechamiento (hipopnea) de las vías respiratorias altas a nivel de la faringe.
+		Algunos de los sintomas son: ronquidos fuertes, somnolencia durante el día, presión arterial alta o dejar de respirar mientras duerme.
+
+	</string>
+
+
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>
 	<string name="questions_quality_2">Durante el último año, he sacado flemas (sacar gargajos)</string>
 	<string name="questions_quality_3">Durante el último año, he tenido falta de aire</string>

@@ -115,20 +115,8 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_1"
-                    android:id="@+id/radioButtonSahos7" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_2"
-                    android:id="@+id/radioButtonSahos8" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_3"
-                    android:id="@+id/radioButtonSahos9" />
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos11" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -137,8 +125,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_5"
-                    android:id="@+id/radioButtonSahos11" />
+                    android:text="@string/option_sahos_3_3"
+                    android:id="@+id/radioButtonSahos9" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos8" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos7" />
                 
             </RadioGroup>
             <TextView
@@ -191,20 +189,8 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_1"
-                    android:id="@+id/radioButtonSahos14" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_2"
-                    android:id="@+id/radioButtonSahos15" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_3"
-                    android:id="@+id/radioButtonSahos16" />
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos18" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -213,8 +199,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_5"
-                    android:id="@+id/radioButtonSahos18" />
+                    android:text="@string/option_sahos_3_3"
+                    android:id="@+id/radioButtonSahos16" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos15" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos14" />
                 
             </RadioGroup>
             <TextView
@@ -237,20 +233,8 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_1"
-                    android:id="@+id/radioButtonSahos19" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_2"
-                    android:id="@+id/radioButtonSahos20" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_3"
-                    android:id="@+id/radioButtonSahos21" />
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos23" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -259,8 +243,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_5"
-                    android:id="@+id/radioButtonSahos23" />
+                    android:text="@string/option_sahos_3_3"
+                    android:id="@+id/radioButtonSahos21" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos20" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos19" />
                 
             </RadioGroup>
             <TextView
@@ -283,14 +277,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_1"
-                    android:id="@+id/radioButtonSahos24" />
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos27" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_2"
-                    android:id="@+id/radioButtonSahos25" />
+                    android:text="@string/option_sahos_3_4"
+                    android:id="@+id/radioButtonSahos22" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -300,13 +293,14 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_4"
-                    android:id="@+id/radioButtonSahos22" />
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos25" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_5"
-                    android:id="@+id/radioButtonSahos27" />
+                    
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos24" />
                 
             </RadioGroup>
 
@@ -361,14 +355,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    
-                    android:text="@string/option_sahos_3_1"
-                    android:id="@+id/radioButtonSahos34" />
+                    android:text="@string/option_sahos_3_5"
+                    android:id="@+id/radioButtonSahos38" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_2"
-                    android:id="@+id/radioButtonSahos35" />
+                    android:text="@string/option_sahos_3_4"
+                    android:id="@+id/radioButtonSahos37" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -378,14 +371,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_4"
-                    android:id="@+id/radioButtonSahos37" />
+                    android:text="@string/option_sahos_3_2"
+                    android:id="@+id/radioButtonSahos35" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/option_sahos_3_5"
-                    android:id="@+id/radioButtonSahos38" />
-                
+                    android:text="@string/option_sahos_3_1"
+                    android:id="@+id/radioButtonSahos34" />
             </RadioGroup>
             <TextView
                 android:text="@string/questions_sahos_10"
