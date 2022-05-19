@@ -2,6 +2,20 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RecuperaPwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaPwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RecuperaPwdResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="EstaRegistrado">
         <s:complexType>
           <s:sequence>
@@ -85,6 +99,12 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="RecuperaPwdSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperaPwd" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaPwdSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperaPwdResponse" />
+  </wsdl:message>
   <wsdl:message name="EstaRegistradoSoapIn">
     <wsdl:part name="parameters" element="tns:EstaRegistrado" />
   </wsdl:message>
@@ -110,6 +130,10 @@
     <wsdl:part name="parameters" element="tns:riesgoEnfermedadResponse" />
   </wsdl:message>
   <wsdl:portType name="WS_BreathingSoap">
+    <wsdl:operation name="RecuperaPwd">
+      <wsdl:input message="tns:RecuperaPwdSoapIn" />
+      <wsdl:output message="tns:RecuperaPwdSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="EstaRegistrado">
       <wsdl:input message="tns:EstaRegistradoSoapIn" />
       <wsdl:output message="tns:EstaRegistradoSoapOut" />
@@ -129,6 +153,15 @@
   </wsdl:portType>
   <wsdl:binding name="WS_BreathingSoap" type="tns:WS_BreathingSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperaPwd">
+      <soap:operation soapAction="http://tempuri.org/RecuperaPwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="EstaRegistrado">
       <soap:operation soapAction="http://tempuri.org/EstaRegistrado" style="document" />
       <wsdl:input>
@@ -168,6 +201,15 @@
   </wsdl:binding>
   <wsdl:binding name="WS_BreathingSoap12" type="tns:WS_BreathingSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperaPwd">
+      <soap12:operation soapAction="http://tempuri.org/RecuperaPwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="EstaRegistrado">
       <soap12:operation soapAction="http://tempuri.org/EstaRegistrado" style="document" />
       <wsdl:input>

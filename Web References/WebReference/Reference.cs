@@ -29,6 +29,8 @@ namespace JoseTFG.WebReference {
     [System.Web.Services.WebServiceBindingAttribute(Name="WS_BreathingSoap", Namespace="http://tempuri.org/")]
     public partial class WS_Breathing : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
+        private System.Threading.SendOrPostCallback RecuperaPwdOperationCompleted;
+        
         private System.Threading.SendOrPostCallback EstaRegistradoOperationCompleted;
         
         private System.Threading.SendOrPostCallback RegistrarOperationCompleted;
@@ -76,6 +78,9 @@ namespace JoseTFG.WebReference {
         }
         
         /// <remarks/>
+        public event RecuperaPwdCompletedEventHandler RecuperaPwdCompleted;
+        
+        /// <remarks/>
         public event EstaRegistradoCompletedEventHandler EstaRegistradoCompleted;
         
         /// <remarks/>
@@ -86,6 +91,35 @@ namespace JoseTFG.WebReference {
         
         /// <remarks/>
         public event riesgoEnfermedadCompletedEventHandler riesgoEnfermedadCompleted;
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RecuperaPwd", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool RecuperaPwd(string usuario) {
+            object[] results = this.Invoke("RecuperaPwd", new object[] {
+                        usuario});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RecuperaPwdAsync(string usuario) {
+            this.RecuperaPwdAsync(usuario, null);
+        }
+        
+        /// <remarks/>
+        public void RecuperaPwdAsync(string usuario, object userState) {
+            if ((this.RecuperaPwdOperationCompleted == null)) {
+                this.RecuperaPwdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRecuperaPwdOperationCompleted);
+            }
+            this.InvokeAsync("RecuperaPwd", new object[] {
+                        usuario}, this.RecuperaPwdOperationCompleted, userState);
+        }
+        
+        private void OnRecuperaPwdOperationCompleted(object arg) {
+            if ((this.RecuperaPwdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RecuperaPwdCompleted(this, new RecuperaPwdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EstaRegistrado", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -295,6 +329,32 @@ namespace JoseTFG.WebReference {
             }
             set {
                 this.sintomasField1 = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void RecuperaPwdCompletedEventHandler(object sender, RecuperaPwdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class RecuperaPwdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal RecuperaPwdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
             }
         }
     }

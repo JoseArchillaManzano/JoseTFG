@@ -18,7 +18,7 @@
 	<string name="text_signup_message">Hola, vamos a crear su cuenta</string>
 
 	<string name="text_forgot_password_title">¿Ha olvidado su contraseña? No se preocupe</string>
-	<string name="text_forgot_password_message">Le enviaremos un enlace para restablecer su contraseña</string>
+	<string name="text_forgot_password_message">Le enviaremos al correo asociado a su usuario la contraseña olvidada</string>
 
 	<string name="hint_email">Email</string>
 	<string name="hint_phone">Phone</string>
@@ -26,6 +26,7 @@
 
 	<string name="fail_login">El usuario o contraseña es incorrecto</string>
 	<string name="user_already_registered">Este usuario ya está registrado</string>
+	<string name="user_not_registered">Este usuario no se encuentra en el sistema</string>
 	<string name="mail_no_valid">El email introducido no es valido</string>
 	<string name="mismatched_password">Las contraseñas no coinciden entre si</string>
 	<string name="missing_fields">Faltan campos por rellenar</string>

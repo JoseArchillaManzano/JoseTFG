@@ -35,6 +35,7 @@ namespace JoseTFG.Activities
 
             bSignIn.Click += signIn;
             bSignUp.Click += signUp;
+            bForgotPassword.Click += forgotPassword;
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -67,6 +68,12 @@ namespace JoseTFG.Activities
         private void signUp(object sender, EventArgs eventArgs)
         {
             Intent intent = new Intent(this, typeof(RegisterActivity));
+            StartActivity(intent);
+        }
+
+        private void forgotPassword(object sender, EventArgs eventArgs)
+        {
+            Intent intent = new Intent(this, typeof(ForgotPasswordActivity));
             StartActivity(intent);
         }
     }
