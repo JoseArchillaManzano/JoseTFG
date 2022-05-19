@@ -26,6 +26,8 @@ namespace JoseTFG.Activities
         Android.App.AlertDialog.Builder alert;
         Dialog dialog;
         string title = "";
+        RadioGroup rg1 = null;
+        RadioGroup rg8 = null;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -54,6 +56,10 @@ namespace JoseTFG.Activities
                 bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveySahos);
                 title = GetString(Resource.String.title_survey_sahos);
                 questions = new List<Question>(Data.SahosQuestion.getSahosSurvey());
+                rg1 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos1);
+                rg1.CheckedChange += (_, args) => { toogleQuestionVisibility(args.CheckedId, 1); };
+                rg8 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos8);
+                rg8.CheckedChange += (_, args) => { toogleQuestionVisibility(args.CheckedId, 8); };
             }
             else if (option == "epoc")
             {
@@ -84,6 +90,41 @@ namespace JoseTFG.Activities
             ws = new WS_Breathing();
         }
 
+        private void toogleQuestionVisibility(int idRadioButton, int question)
+        {
+            if (question == 1)
+            {
+                int position = rg1.IndexOfChild(FindViewById<RadioButton>(idRadioButton));
+                TextView text2 = FindViewById<TextView>(Resource.Id.textViewSahos2);
+                TextView text3 = FindViewById<TextView>(Resource.Id.textViewSahos3);
+                TextView text4 = FindViewById<TextView>(Resource.Id.textViewSahos4);
+                TextView text5 = FindViewById<TextView>(Resource.Id.textViewSahos5);
+
+                RadioGroup rGroup2 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos2);
+                RadioGroup rGroup3 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos3);
+                RadioGroup rGroup4 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos4);
+                RadioGroup rGroup5 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos5);
+
+                text2.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                text3.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                text4.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                text5.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+
+                rGroup2.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                rGroup3.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                rGroup4.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                rGroup5.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+            }
+            else if (question == 8)
+            {
+                int position = rg8.IndexOfChild(FindViewById<RadioButton>(idRadioButton));
+                TextView text9 = FindViewById<TextView>(Resource.Id.textViewSahos9);
+                RadioGroup rGroup9 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos9);
+                text9.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+                rGroup9.Visibility = position == 0 ? ViewStates.Gone : ViewStates.Visible;
+            }
+
+        }
         private void checkSurvey(object sender, EventArgs eventArgs)
         {
             bool missAnswer = false;
@@ -173,5 +214,7 @@ namespace JoseTFG.Activities
         {
             dialog.Show();
         }
+
+
     }
 }

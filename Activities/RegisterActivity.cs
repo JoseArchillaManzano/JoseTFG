@@ -31,7 +31,8 @@ namespace JoseTFG.Activities
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.SetNavigationOnClickListener(this);
-            SupportActionBar.Title = GetString(Resource.String.title_register);
+            //SupportActionBar.Title = GetString(Resource.String.title_register);
+            SupportActionBar.Title = "";
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
             etConfirmPassword = FindViewById<EditText>(Resource.Id.et_confirm_password);
