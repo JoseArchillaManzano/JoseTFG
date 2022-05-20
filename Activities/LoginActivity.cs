@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
@@ -37,13 +36,6 @@ namespace JoseTFG.Activities
             bSignUp.Click += signUp;
             bForgotPassword.Click += forgotPassword;
         }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-
         private void signIn(object sender, EventArgs eventArgs)
         {
             View view = this.CurrentFocus;

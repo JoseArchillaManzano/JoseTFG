@@ -26,6 +26,7 @@
 
 	<string name="fail_login">El usuario o contraseña es incorrecto</string>
 	<string name="user_already_registered">Este usuario ya está registrado</string>
+	<string name="send_email">Se ha enviado a su correo la contraseña solicitada</string>
 	<string name="user_not_registered">Este usuario no se encuentra en el sistema</string>
 	<string name="mail_no_valid">El email introducido no es valido</string>
 	<string name="mismatched_password">Las contraseñas no coinciden entre si</string>

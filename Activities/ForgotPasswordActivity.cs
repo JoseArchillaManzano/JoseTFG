@@ -27,7 +27,6 @@ namespace JoseTFG.Activities
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.SetNavigationOnClickListener(this);
-            //SupportActionBar.Title = GetString(Resource.String.title_register);
             SupportActionBar.Title = "";
             bSend = FindViewById<Button>(Resource.Id.button_send);
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
@@ -41,9 +40,17 @@ namespace JoseTFG.Activities
             bool result = ws.RecuperaPwd(textUser);
             if (result)
             {
-                Intent intent = new Intent(this, typeof(LoginActivity));
-                StartActivity(intent);
-                Finish();
+                Toast toast = Toast.MakeText(this, Resource.String.send_email, ToastLength.Long);
+                toast.Show();
+                new Handler().PostDelayed(() =>
+                {
+
+                    Intent intent = new Intent(this, typeof(LoginActivity));
+                    StartActivity(intent);
+                    Finish();
+
+                }, 3000);
+
             }
             else
             {

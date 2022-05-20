@@ -7748,73 +7748,76 @@ namespace JoseTFG
 			public const int search_menu_title = 2131558588;
 			
 			// aapt resource value: 0x7F0D00BD
-			public const int status_bar_notification_info_overflow = 2131558589;
+			public const int send_email = 2131558589;
 			
 			// aapt resource value: 0x7F0D00BE
-			public const int text_forgot_password = 2131558590;
+			public const int status_bar_notification_info_overflow = 2131558590;
 			
 			// aapt resource value: 0x7F0D00BF
-			public const int text_forgot_password_message = 2131558591;
+			public const int text_forgot_password = 2131558591;
 			
 			// aapt resource value: 0x7F0D00C0
-			public const int text_forgot_password_title = 2131558592;
+			public const int text_forgot_password_message = 2131558592;
 			
 			// aapt resource value: 0x7F0D00C1
-			public const int text_high = 2131558593;
+			public const int text_forgot_password_title = 2131558593;
 			
 			// aapt resource value: 0x7F0D00C2
-			public const int text_low = 2131558594;
+			public const int text_high = 2131558594;
 			
 			// aapt resource value: 0x7F0D00C3
-			public const int text_menu_epoc = 2131558595;
+			public const int text_low = 2131558595;
 			
 			// aapt resource value: 0x7F0D00C4
-			public const int text_menu_sahos = 2131558596;
+			public const int text_menu_epoc = 2131558596;
 			
 			// aapt resource value: 0x7F0D00C5
-			public const int text_nonexistent = 2131558597;
+			public const int text_menu_sahos = 2131558597;
 			
 			// aapt resource value: 0x7F0D00C6
-			public const int text_result = 2131558598;
+			public const int text_nonexistent = 2131558598;
 			
 			// aapt resource value: 0x7F0D00C7
-			public const int text_signin_message = 2131558599;
+			public const int text_result = 2131558599;
 			
 			// aapt resource value: 0x7F0D00C8
-			public const int text_signin_signup = 2131558600;
+			public const int text_signin_message = 2131558600;
 			
 			// aapt resource value: 0x7F0D00C9
-			public const int text_signin_social_media = 2131558601;
+			public const int text_signin_signup = 2131558601;
 			
 			// aapt resource value: 0x7F0D00CA
-			public const int text_signup_message = 2131558602;
+			public const int text_signin_social_media = 2131558602;
 			
 			// aapt resource value: 0x7F0D00CB
-			public const int text_signup_social_media = 2131558603;
+			public const int text_signup_message = 2131558603;
 			
 			// aapt resource value: 0x7F0D00CC
-			public const int text_signup_terms = 2131558604;
+			public const int text_signup_social_media = 2131558604;
 			
 			// aapt resource value: 0x7F0D00CD
-			public const int title_dialog_survey = 2131558605;
+			public const int text_signup_terms = 2131558605;
 			
 			// aapt resource value: 0x7F0D00CE
-			public const int title_epoc_sahos = 2131558606;
+			public const int title_dialog_survey = 2131558606;
 			
 			// aapt resource value: 0x7F0D00CF
-			public const int title_quality_sahos = 2131558607;
+			public const int title_epoc_sahos = 2131558607;
 			
 			// aapt resource value: 0x7F0D00D0
-			public const int title_register = 2131558608;
+			public const int title_quality_sahos = 2131558608;
 			
 			// aapt resource value: 0x7F0D00D1
-			public const int title_survey_sahos = 2131558609;
+			public const int title_register = 2131558609;
 			
 			// aapt resource value: 0x7F0D00D2
-			public const int user_already_registered = 2131558610;
+			public const int title_survey_sahos = 2131558610;
 			
 			// aapt resource value: 0x7F0D00D3
-			public const int user_not_registered = 2131558611;
+			public const int user_already_registered = 2131558611;
+			
+			// aapt resource value: 0x7F0D00D4
+			public const int user_not_registered = 2131558612;
 			
 			static String()
 			{

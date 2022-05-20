@@ -21,9 +21,7 @@ namespace JoseTFG.Activities
 
         private void SetTimer()
         {
-            // Create a timer with a two second interval.
             timer = new Timer(100);
-            // Hook up the Elapsed event for the timer. 
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = false;
             timer.Enabled = true;
