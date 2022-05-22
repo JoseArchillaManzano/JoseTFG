@@ -54,7 +54,8 @@
 
 	<string name="title_survey_sahos">Cuestionario Sahos</string>
 	<string name="title_epoc_sahos">Cuestionario EPOC</string>
-	<string name="title_quality_sahos">Cuestionario EPOC</string>
+	<string name="title_quality_life">Cuestionario Calidad de vida</string>
+	<string name="title_survey_health_evaluation">Evaluación de la salud respiratoria</string>
 	<string name="title_register">Registro</string>
 	
 	<string name="text_menu_epoc">
@@ -68,6 +69,8 @@
 		Algunos de los sintomas son: ronquidos fuertes, somnolencia durante el día, presión arterial alta o dejar de respirar mientras duerme.
 
 	</string>
+	<string name="text_menu_health_evaluation">Realice una evaluación de la salud respiratioria. Con este cuestionario, 
+	sabrá si padece algunas de las enfermedades almacenadas en nuestro sistema.</string>
 
 
 	<string name="questions_quality_1">Durante el último año, he tenido tos</string>

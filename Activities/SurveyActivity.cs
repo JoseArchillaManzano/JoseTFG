@@ -52,8 +52,6 @@ namespace JoseTFG.Activities
             if (option == "sahos")
             {
                 SetContentView(Resource.Layout.survey_sahos);
-                linearLayout = FindViewById<LinearLayout>(Resource.Id.surveySahos);
-                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveySahos);
                 title = GetString(Resource.String.title_survey_sahos);
                 questions = new List<Question>(Data.SahosQuestion.getSahosSurvey());
                 rg1 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos1);
@@ -64,22 +62,24 @@ namespace JoseTFG.Activities
             else if (option == "epoc")
             {
                 SetContentView(Resource.Layout.survey_epoc);
-                linearLayout = FindViewById<LinearLayout>(Resource.Id.surveyEpoc);
-                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurveyEpoc);
                 title = GetString(Resource.String.title_epoc_sahos);
                 questions = new List<Question>(Data.EpocQuestion.getEpocSurvey());
             }
 
             else
             {
-                SetContentView(Resource.Layout.survey_quality_life);
-                linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
-                bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
-                title = GetString(Resource.String.title_quality_sahos);
-                //questions = new List<Question>(Data.AllQuestions.getEpocSurvey());
-
+                SetContentView(Resource.Layout.survey_health_evaluation);
+                title = GetString(Resource.String.title_survey_health_evaluation);
+                questions = new List<Question>(Data.SahosQuestion.getSahosSurvey());
+                questions.AddRange(Data.EpocQuestion.getEpocSurvey());
+                rg1 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos1);
+                rg1.CheckedChange += (_, args) => { toogleQuestionVisibility(args.CheckedId, 1); };
+                rg8 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos8);
+                rg8.CheckedChange += (_, args) => { toogleQuestionVisibility(args.CheckedId, 8); };
 
             }
+            linearLayout = FindViewById<LinearLayout>(Resource.Id.survey);
+            bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.SetNavigationOnClickListener(this);

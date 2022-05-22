@@ -3,79 +3,120 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     
-    
-
-   <LinearLayout
-        android:id="@+id/card1_menu"
-        android:layout_width="375dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:padding="20dp"
-        android:orientation="vertical"
-        android:background="@drawable/card_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
+           <LinearLayout
+                android:id="@+id/card1_menu"
+                android:layout_width="375dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:textColor="@color/md_black_1000"
-                android:text="@string/text_menu_epoc" />
-
-            <Button
-                android:id="@+id/button_epoc_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                style="@style/Button1"
-                android:text="@string/epoc_menu" />
-    </LinearLayout>
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/card_menu"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:id="@+id/card2_menu"
-        android:layout_width="375dp"
-        android:layout_height="215dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginBottom="144dp"
-        android:orientation="vertical"
-        android:background="@drawable/card_menu"
-        android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card1_menu">
+                <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/md_black_1000"
+                        android:text="@string/text_menu_epoc" />
 
-        <TextView
-                android:id="@+id/textView7"
+                    <Button
+                        android:id="@+id/button_epoc_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        style="@style/Button1"
+                        android:text="@string/epoc_menu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card2_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-            android:textColor="@color/md_black_1000"
-                android:text="@string/text_menu_sahos" />
-
-            <Button
-                android:id="@+id/button_sahos_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sahos_menu"
-                style="@style/Button1"
-                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"/>
-    </LinearLayout>
+                android:layout_marginTop="67dp"
+                android:orientation="vertical"
+                android:background="@drawable/card_menu"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.611"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card1_menu">
 
+                <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                    android:textColor="@color/md_black_1000"
+                        android:text="@string/text_menu_sahos" />
+
+                    <Button
+                        android:id="@+id/button_sahos_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sahos_menu"
+                        style="@style/Button1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card3_menu"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="67dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="44dp"
+                android:orientation="vertical"
+                android:background="@drawable/card_menu"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.611"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2_menu">
+
+                <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                    android:textColor="@color/md_black_1000"
+                        android:text="@string/text_menu_health_evaluation" />
+
+                    <Button
+                        android:id="@+id/button_health_evaluation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_survey_health_evaluation"
+                        style="@style/Button1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

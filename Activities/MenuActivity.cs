@@ -11,6 +11,7 @@ namespace JoseTFG.Activities
     {
         Button bSahos;
         Button bEpoc;
+        Button bHealthEvaluation;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -21,9 +22,11 @@ namespace JoseTFG.Activities
             SetContentView(Resource.Layout.menu);
             bSahos = FindViewById<Button>(Resource.Id.button_sahos_menu);
             bEpoc = FindViewById<Button>(Resource.Id.button_epoc_menu);
+            bHealthEvaluation = FindViewById<Button>(Resource.Id.button_health_evaluation);
 
             bSahos.Click += startSahosTest;
             bEpoc.Click += startEpocTest;
+            bHealthEvaluation.Click += startHealthEvaluationTest;
         }
 
         private void startSahosTest(object sender, EventArgs eventArgs)
@@ -38,6 +41,14 @@ namespace JoseTFG.Activities
         {
             Intent intent = new Intent(this, typeof(SurveyActivity));
             intent.PutExtra("option", "epoc");
+            StartActivity(intent);
+            Finish();
+        }
+
+        private void startHealthEvaluationTest(object sender, EventArgs eventArgs)
+        {
+            Intent intent = new Intent(this, typeof(SurveyActivity));
+            intent.PutExtra("option", "health");
             StartActivity(intent);
             Finish();
         }
