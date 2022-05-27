@@ -7149,28 +7149,31 @@ namespace JoseTFG
 			public const int result = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int select_dialog_item_material = 2131427387;
+			public const int result_health_evaluation = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int select_dialog_multichoice_material = 2131427388;
+			public const int select_dialog_item_material = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int select_dialog_singlechoice_material = 2131427389;
+			public const int select_dialog_multichoice_material = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int support_simple_spinner_dropdown_item = 2131427390;
+			public const int select_dialog_singlechoice_material = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int survey_epoc = 2131427391;
+			public const int support_simple_spinner_dropdown_item = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int survey_health_evaluation = 2131427392;
+			public const int survey_epoc = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int survey_quality_life = 2131427393;
+			public const int survey_health_evaluation = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int survey_sahos = 2131427394;
+			public const int survey_quality_life = 2131427394;
+			
+			// aapt resource value: 0x7F0B0043
+			public const int survey_sahos = 2131427395;
 			
 			static Layout()
 			{
@@ -7628,229 +7631,232 @@ namespace JoseTFG
 			public const int option_sahos_3_5 = 2131558539;
 			
 			// aapt resource value: 0x7F0D008C
-			public const int password_toggle_content_description = 2131558540;
+			public const int password_no_strong = 2131558540;
 			
 			// aapt resource value: 0x7F0D008D
-			public const int path_password_eye = 2131558541;
+			public const int password_toggle_content_description = 2131558541;
 			
 			// aapt resource value: 0x7F0D008E
-			public const int path_password_eye_mask_strike_through = 2131558542;
+			public const int path_password_eye = 2131558542;
 			
 			// aapt resource value: 0x7F0D008F
-			public const int path_password_eye_mask_visible = 2131558543;
+			public const int path_password_eye_mask_strike_through = 2131558543;
 			
 			// aapt resource value: 0x7F0D0090
-			public const int path_password_strike_through = 2131558544;
+			public const int path_password_eye_mask_visible = 2131558544;
 			
 			// aapt resource value: 0x7F0D0091
-			public const int questions_epoc_1 = 2131558545;
+			public const int path_password_strike_through = 2131558545;
 			
 			// aapt resource value: 0x7F0D0092
-			public const int questions_epoc_2 = 2131558546;
+			public const int questions_epoc_1 = 2131558546;
 			
 			// aapt resource value: 0x7F0D0093
-			public const int questions_epoc_3 = 2131558547;
+			public const int questions_epoc_2 = 2131558547;
 			
 			// aapt resource value: 0x7F0D0094
-			public const int questions_epoc_4 = 2131558548;
+			public const int questions_epoc_3 = 2131558548;
 			
 			// aapt resource value: 0x7F0D0095
-			public const int questions_epoc_5 = 2131558549;
+			public const int questions_epoc_4 = 2131558549;
 			
 			// aapt resource value: 0x7F0D0096
-			public const int questions_epoc_6 = 2131558550;
+			public const int questions_epoc_5 = 2131558550;
 			
 			// aapt resource value: 0x7F0D0097
-			public const int questions_epoc_7 = 2131558551;
+			public const int questions_epoc_6 = 2131558551;
 			
 			// aapt resource value: 0x7F0D0098
-			public const int questions_epoc_8 = 2131558552;
+			public const int questions_epoc_7 = 2131558552;
 			
 			// aapt resource value: 0x7F0D0099
-			public const int questions_epoc_9 = 2131558553;
+			public const int questions_epoc_8 = 2131558553;
 			
 			// aapt resource value: 0x7F0D009A
-			public const int questions_no_answered = 2131558554;
+			public const int questions_epoc_9 = 2131558554;
 			
 			// aapt resource value: 0x7F0D009B
-			public const int questions_quality_1 = 2131558555;
+			public const int questions_no_answered = 2131558555;
 			
 			// aapt resource value: 0x7F0D009C
-			public const int questions_quality_10 = 2131558556;
+			public const int questions_quality_1 = 2131558556;
 			
 			// aapt resource value: 0x7F0D009D
-			public const int questions_quality_11 = 2131558557;
+			public const int questions_quality_10 = 2131558557;
 			
 			// aapt resource value: 0x7F0D009E
-			public const int questions_quality_12 = 2131558558;
+			public const int questions_quality_11 = 2131558558;
 			
 			// aapt resource value: 0x7F0D009F
-			public const int questions_quality_13 = 2131558559;
+			public const int questions_quality_12 = 2131558559;
 			
 			// aapt resource value: 0x7F0D00A0
-			public const int questions_quality_14 = 2131558560;
+			public const int questions_quality_13 = 2131558560;
 			
 			// aapt resource value: 0x7F0D00A1
-			public const int questions_quality_15 = 2131558561;
+			public const int questions_quality_14 = 2131558561;
 			
 			// aapt resource value: 0x7F0D00A2
-			public const int questions_quality_16 = 2131558562;
+			public const int questions_quality_15 = 2131558562;
 			
 			// aapt resource value: 0x7F0D00A3
-			public const int questions_quality_17 = 2131558563;
+			public const int questions_quality_16 = 2131558563;
 			
 			// aapt resource value: 0x7F0D00A4
-			public const int questions_quality_2 = 2131558564;
+			public const int questions_quality_17 = 2131558564;
 			
 			// aapt resource value: 0x7F0D00A5
-			public const int questions_quality_3 = 2131558565;
+			public const int questions_quality_2 = 2131558565;
 			
 			// aapt resource value: 0x7F0D00A6
-			public const int questions_quality_4 = 2131558566;
+			public const int questions_quality_3 = 2131558566;
 			
 			// aapt resource value: 0x7F0D00A7
-			public const int questions_quality_5 = 2131558567;
+			public const int questions_quality_4 = 2131558567;
 			
 			// aapt resource value: 0x7F0D00A8
-			public const int questions_quality_6 = 2131558568;
+			public const int questions_quality_5 = 2131558568;
 			
 			// aapt resource value: 0x7F0D00A9
-			public const int questions_quality_7 = 2131558569;
+			public const int questions_quality_6 = 2131558569;
 			
 			// aapt resource value: 0x7F0D00AA
-			public const int questions_quality_8 = 2131558570;
+			public const int questions_quality_7 = 2131558570;
 			
 			// aapt resource value: 0x7F0D00AB
-			public const int questions_quality_9 = 2131558571;
+			public const int questions_quality_8 = 2131558571;
 			
 			// aapt resource value: 0x7F0D00AC
-			public const int questions_sahos_1 = 2131558572;
+			public const int questions_quality_9 = 2131558572;
 			
 			// aapt resource value: 0x7F0D00AD
-			public const int questions_sahos_10 = 2131558573;
+			public const int questions_sahos_1 = 2131558573;
 			
 			// aapt resource value: 0x7F0D00AE
-			public const int questions_sahos_11 = 2131558574;
+			public const int questions_sahos_10 = 2131558574;
 			
 			// aapt resource value: 0x7F0D00AF
-			public const int questions_sahos_2 = 2131558575;
+			public const int questions_sahos_11 = 2131558575;
 			
 			// aapt resource value: 0x7F0D00B0
-			public const int questions_sahos_3 = 2131558576;
+			public const int questions_sahos_2 = 2131558576;
 			
 			// aapt resource value: 0x7F0D00B1
-			public const int questions_sahos_4 = 2131558577;
+			public const int questions_sahos_3 = 2131558577;
 			
 			// aapt resource value: 0x7F0D00B2
-			public const int questions_sahos_5 = 2131558578;
+			public const int questions_sahos_4 = 2131558578;
 			
 			// aapt resource value: 0x7F0D00B3
-			public const int questions_sahos_6 = 2131558579;
+			public const int questions_sahos_5 = 2131558579;
 			
 			// aapt resource value: 0x7F0D00B4
-			public const int questions_sahos_7 = 2131558580;
+			public const int questions_sahos_6 = 2131558580;
 			
 			// aapt resource value: 0x7F0D00B5
-			public const int questions_sahos_8 = 2131558581;
+			public const int questions_sahos_7 = 2131558581;
 			
 			// aapt resource value: 0x7F0D00B6
-			public const int questions_sahos_9 = 2131558582;
+			public const int questions_sahos_8 = 2131558582;
 			
 			// aapt resource value: 0x7F0D00B7
-			public const int result_back = 2131558583;
+			public const int questions_sahos_9 = 2131558583;
 			
 			// aapt resource value: 0x7F0D00B8
-			public const int risk_high = 2131558584;
+			public const int result_back = 2131558584;
 			
 			// aapt resource value: 0x7F0D00B9
-			public const int risk_low = 2131558585;
+			public const int risk_high = 2131558585;
 			
 			// aapt resource value: 0x7F0D00BA
-			public const int risk_nonexistent = 2131558586;
+			public const int risk_low = 2131558586;
 			
 			// aapt resource value: 0x7F0D00BB
-			public const int sahos_menu = 2131558587;
+			public const int risk_nonexistent = 2131558587;
 			
 			// aapt resource value: 0x7F0D00BC
-			public const int search_menu_title = 2131558588;
+			public const int sahos_menu = 2131558588;
 			
 			// aapt resource value: 0x7F0D00BD
-			public const int send_email = 2131558589;
+			public const int search_menu_title = 2131558589;
 			
 			// aapt resource value: 0x7F0D00BE
-			public const int status_bar_notification_info_overflow = 2131558590;
+			public const int send_email = 2131558590;
 			
 			// aapt resource value: 0x7F0D00BF
-			public const int text_forgot_password = 2131558591;
+			public const int status_bar_notification_info_overflow = 2131558591;
 			
 			// aapt resource value: 0x7F0D00C0
-			public const int text_forgot_password_message = 2131558592;
+			public const int text_forgot_password = 2131558592;
 			
 			// aapt resource value: 0x7F0D00C1
-			public const int text_forgot_password_title = 2131558593;
+			public const int text_forgot_password_message = 2131558593;
 			
 			// aapt resource value: 0x7F0D00C2
-			public const int text_high = 2131558594;
+			public const int text_forgot_password_title = 2131558594;
 			
 			// aapt resource value: 0x7F0D00C3
-			public const int text_low = 2131558595;
+			public const int text_high = 2131558595;
 			
 			// aapt resource value: 0x7F0D00C4
-			public const int text_menu_epoc = 2131558596;
+			public const int text_low = 2131558596;
 			
 			// aapt resource value: 0x7F0D00C5
-			public const int text_menu_health_evaluation = 2131558597;
+			public const int text_menu_epoc = 2131558597;
 			
 			// aapt resource value: 0x7F0D00C6
-			public const int text_menu_sahos = 2131558598;
+			public const int text_menu_health_evaluation = 2131558598;
 			
 			// aapt resource value: 0x7F0D00C7
-			public const int text_nonexistent = 2131558599;
+			public const int text_menu_sahos = 2131558599;
 			
 			// aapt resource value: 0x7F0D00C8
-			public const int text_result = 2131558600;
+			public const int text_nonexistent = 2131558600;
 			
 			// aapt resource value: 0x7F0D00C9
-			public const int text_signin_message = 2131558601;
+			public const int text_result = 2131558601;
 			
 			// aapt resource value: 0x7F0D00CA
-			public const int text_signin_signup = 2131558602;
+			public const int text_signin_message = 2131558602;
 			
 			// aapt resource value: 0x7F0D00CB
-			public const int text_signin_social_media = 2131558603;
+			public const int text_signin_signup = 2131558603;
 			
 			// aapt resource value: 0x7F0D00CC
-			public const int text_signup_message = 2131558604;
+			public const int text_signin_social_media = 2131558604;
 			
 			// aapt resource value: 0x7F0D00CD
-			public const int text_signup_social_media = 2131558605;
+			public const int text_signup_message = 2131558605;
 			
 			// aapt resource value: 0x7F0D00CE
-			public const int text_signup_terms = 2131558606;
+			public const int text_signup_social_media = 2131558606;
 			
 			// aapt resource value: 0x7F0D00CF
-			public const int title_dialog_survey = 2131558607;
+			public const int text_signup_terms = 2131558607;
 			
 			// aapt resource value: 0x7F0D00D0
-			public const int title_epoc_sahos = 2131558608;
+			public const int title_dialog_survey = 2131558608;
 			
 			// aapt resource value: 0x7F0D00D1
-			public const int title_quality_life = 2131558609;
+			public const int title_epoc_sahos = 2131558609;
 			
 			// aapt resource value: 0x7F0D00D2
-			public const int title_register = 2131558610;
+			public const int title_quality_life = 2131558610;
 			
 			// aapt resource value: 0x7F0D00D3
-			public const int title_survey_health_evaluation = 2131558611;
+			public const int title_register = 2131558611;
 			
 			// aapt resource value: 0x7F0D00D4
-			public const int title_survey_sahos = 2131558612;
+			public const int title_survey_health_evaluation = 2131558612;
 			
 			// aapt resource value: 0x7F0D00D5
-			public const int user_already_registered = 2131558613;
+			public const int title_survey_sahos = 2131558613;
 			
 			// aapt resource value: 0x7F0D00D6
-			public const int user_not_registered = 2131558614;
+			public const int user_already_registered = 2131558614;
+			
+			// aapt resource value: 0x7F0D00D7
+			public const int user_not_registered = 2131558615;
 			
 			static String()
 			{

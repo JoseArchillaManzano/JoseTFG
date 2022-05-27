@@ -32,6 +32,7 @@
 	<string name="mismatched_password">Las contraseñas no coinciden entre si</string>
 	<string name="missing_fields">Faltan campos por rellenar</string>
 	<string name="questions_no_answered">Faltan preguntas por responder</string>
+	<string name="password_no_strong">La contraseña introducida debe contener al menos 8 caracteres y contener al menos una letra mayuscula, minúscula y un caracter especial</string>
 	
 	<string name="sahos_menu">Cuestionario Sahos</string>
 	<string name="epoc_menu">Cuestionario EPOC</string>
