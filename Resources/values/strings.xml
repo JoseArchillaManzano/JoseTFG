@@ -37,6 +37,8 @@
 	<string name="sahos_menu">Cuestionario Sahos</string>
 	<string name="epoc_menu">Cuestionario EPOC</string>
 	<string name="text_result">El resultado del cuestionario es:</string>
+	<string name="text_result_epoc">Resultado EPOC:</string>
+	<string name="text_result_sahos">Resultado SAHOS:</string>
 	
 	<string name="risk_high">Alta probabilidad de padecer la enfermedad</string>
 	<string name="risk_low">Baja probabilidad de padecer la enfermedad</string>

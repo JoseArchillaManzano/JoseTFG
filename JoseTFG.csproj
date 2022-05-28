@@ -70,6 +70,7 @@
     <Compile Include="Activities\MenuActivity.cs" />
     <Compile Include="Activities\RegisterActivity.cs" />
     <Compile Include="Activities\ResultActivity.cs" />
+    <Compile Include="Activities\ResultHealthyActivity.cs" />
     <Compile Include="Activities\SurveyActivity.cs" />
     <Compile Include="Data\AllQuestions.cs" />
     <Compile Include="Data\EpocQuestion.cs" />

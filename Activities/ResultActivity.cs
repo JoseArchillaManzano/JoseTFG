@@ -27,24 +27,36 @@ namespace JoseTFG.Activities
 
             if (risk == "ALTO RIESO")
             {
-                tRisk.Text = Resources.GetString(Resource.String.risk_high);
-                tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_high);
-                tIndication.Text = Resources.GetString(Resource.String.text_high);
+                setHighRisk();
             }
             else if (risk == "BAJO RIESO")
             {
-                tRisk.Text = Resources.GetString(Resource.String.risk_low);
-                tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_low);
-                tIndication.Text = Resources.GetString(Resource.String.text_low);
+                setLowRisk();
             }
             else
             {
-                tRisk.Text = Resources.GetString(Resource.String.risk_nonexistent);
-                tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_not);
-                tIndication.Text = Resources.GetString(Resource.String.text_nonexistent);
+                setNoRisk();
             }
         }
 
+        private void setHighRisk()
+        {
+            tRisk.Text = Resources.GetString(Resource.String.risk_high);
+            tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_high);
+            tIndication.Text = Resources.GetString(Resource.String.text_high);
+        }
+        private void setLowRisk()
+        {
+            tRisk.Text = Resources.GetString(Resource.String.risk_low);
+            tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_low);
+            tIndication.Text = Resources.GetString(Resource.String.text_low);
+        }
+        private void setNoRisk()
+        {
+            tRisk.Text = Resources.GetString(Resource.String.risk_nonexistent);
+            tRisk.Background = GetDrawable(Resource.Drawable.rounded_corner_not);
+            tIndication.Text = Resources.GetString(Resource.String.text_nonexistent);
+        }
         private void backMenu(object sender, EventArgs eventArgs)
         {
             Intent intent = new Intent(this, typeof(MenuActivity));

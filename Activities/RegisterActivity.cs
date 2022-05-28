@@ -68,14 +68,14 @@ namespace JoseTFG.Activities
                 Toast toast = Toast.MakeText(this, Resource.String.missing_fields, ToastLength.Short);
                 toast.Show();
             }
-            else if (!textPassword.Equals(textConfirm))
-            {
-                Toast toast = Toast.MakeText(this, Resource.String.mismatched_password, ToastLength.Short);
-                toast.Show();
-            }
             else if (!validEmail(textEmail))
             {
                 Toast toast = Toast.MakeText(this, Resource.String.mail_no_valid, ToastLength.Short);
+                toast.Show();
+            }
+            else if (!textPassword.Equals(textConfirm))
+            {
+                Toast toast = Toast.MakeText(this, Resource.String.mismatched_password, ToastLength.Short);
                 toast.Show();
             }
             else if (!strongPassword(textPassword))

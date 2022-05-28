@@ -28,6 +28,8 @@ namespace JoseTFG.Activities
         string title = "";
         RadioGroup rg1 = null;
         RadioGroup rg8 = null;
+        int tamSurveySahos;
+        int tamSurveyEpoc;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -71,7 +73,9 @@ namespace JoseTFG.Activities
                 SetContentView(Resource.Layout.survey_health_evaluation);
                 title = GetString(Resource.String.title_survey_health_evaluation);
                 questions = new List<Question>(Data.SahosQuestion.getSahosSurvey());
+                tamSurveySahos = questions.Count;
                 questions.AddRange(Data.EpocQuestion.getEpocSurvey());
+                tamSurveyEpoc = questions.Count - tamSurveySahos;
                 rg1 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos1);
                 rg1.CheckedChange += (_, args) => { toogleQuestionVisibility(args.CheckedId, 1); };
                 rg8 = FindViewById<RadioGroup>(Resource.Id.radioGroupSahos8);
@@ -195,14 +199,32 @@ namespace JoseTFG.Activities
         private void consultResults()
         {
             Enfermedad[] enfermedades = ws.listaEnfermedades();
-            Enfermedad e = option == "sahos" ? enfermedades[0] : enfermedades[1];
+            Enfermedad e;
 
-            var risk = ws.riesgoEnfermedad(e.nombre, resultTest);
+            if (option != "health")
+            {
+                e = option == "sahos" ? enfermedades[0] : enfermedades[1];
+                var risk = ws.riesgoEnfermedad(e.nombre, resultTest);
+                Intent intent = new Intent(this, typeof(ResultActivity));
+                intent.PutExtra("risk", risk);
+                StartActivity(intent);
+                Finish();
+            }
+            else
+            {
+                int[] resultSahos = new int[tamSurveySahos];
+                int[] resultEpoc = new int[tamSurveyEpoc];
+                for (int i = 0; i < tamSurveySahos; i++) resultSahos[i] = resultTest[i];
+                for (int i = tamSurveySahos; i < questions.Count; i++) resultEpoc[i - tamSurveySahos] = resultTest[i];
+                var riskSahos = ws.riesgoEnfermedad(enfermedades[0].nombre, resultSahos);
+                var riskEpoc = ws.riesgoEnfermedad(enfermedades[1].nombre, resultEpoc);
+                Intent intent = new Intent(this, typeof(ResultHealthyActivity));
+                intent.PutExtra("riskSahos", riskSahos);
+                intent.PutExtra("riskEpoc", riskEpoc);
+                StartActivity(intent);
+                Finish();
+            }
 
-            Intent intent = new Intent(this, typeof(ResultActivity));
-            intent.PutExtra("risk", risk);
-            StartActivity(intent);
-            Finish();
 
         }
         public void OnClick(View v)
