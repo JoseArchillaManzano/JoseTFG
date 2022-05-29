@@ -42,8 +42,7 @@ namespace JoseTFG.Activities
             alert.SetMessage(Resources.GetString(Resource.String.message_dialog_survey));
             alert.SetPositiveButton(Resources.GetString(Resource.String.confirm_dialog_survey), (senderAlert, args) =>
             {
-                Intent intent = new Intent(this, typeof(MenuActivity));
-                StartActivity(intent);
+                base.OnBackPressed();
                 Finish();
             });
             alert.SetNegativeButton(Resources.GetString(Resource.String.cancel_dialog_survey), (senderAlert, args) => { });

@@ -16,6 +16,11 @@
 		Al registrarse, acepta nuestros <b>terminos y condiciones</b>
 	</string>
 	<string name="text_signup_message">Hola, vamos a crear su cuenta</string>
+	<string name="text_change_password">Cambiar contraseña</string>
+	<string name="text_change_email">Cambiar correo electrónico</string>
+	<string name="text_change_user">Cambiar contraseña</string>
+	<string name="text_delete_count">Borrar cuenta</string>
+	<string name="text_update">Actualizar</string>
 
 	<string name="text_forgot_password_title">¿Ha olvidado su contraseña? No se preocupe</string>
 	<string name="text_forgot_password_message">Le enviaremos al correo asociado a su usuario la contraseña olvidada</string>
@@ -25,6 +30,9 @@
 	<string name="hint_confirm_password">Confirmar contraseña</string>
 
 	<string name="fail_login">El usuario o contraseña es incorrecto</string>
+	<string name="successful_update">La actualización se ha realizado correctamente</string>
+	<string name="successful_delete">La cuenta se ha eliminado correctamente</string>
+	<string name="no_successful_update">La actualización no se ha podido realizar. Vuelva a intentarlo</string>
 	<string name="user_already_registered">Este usuario ya está registrado</string>
 	<string name="send_email">Se ha enviado a su correo la contraseña solicitada</string>
 	<string name="user_not_registered">Este usuario no se encuentra en el sistema</string>
@@ -54,6 +62,11 @@
 	<string name="message_dialog_survey">¿Está seguro que desea cancelar el cuestionario? Los cambios realizados no se guardarán</string>
 	<string name="confirm_dialog_survey">Confirmar</string>
 	<string name="cancel_dialog_survey">Seguir con el cuestionario</string>
+
+	<string name="title_dialog_delete">Borrar cuenta</string>
+	<string name="message_dialog_delete">¿Está seguro que desea eliminar esta cuenta? Esta acción no se podra deshacer</string>
+	<string name="confirm_dialog_delete">Confirmar</string>
+	<string name="cancel_dialog_delete">Cancelar</string>
 
 	<string name="title_survey_sahos">Cuestionario Sahos</string>
 	<string name="title_epoc_sahos">Cuestionario EPOC</string>

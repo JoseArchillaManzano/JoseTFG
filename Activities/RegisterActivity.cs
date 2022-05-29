@@ -7,11 +7,10 @@ using Android.Views.InputMethods;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.TextField;
+using JoseTFG.Models;
 using JoseTFG.WebReference;
 using System;
-using System.Text.RegularExpressions;
 using static Android.Views.View;
-
 namespace JoseTFG.Activities
 {
     [Activity(Label = "RegisterActivity")]
@@ -63,12 +62,13 @@ namespace JoseTFG.Activities
             var textPassword = etPassword.Text;
             var textConfirm = etConfirmPassword.Text;
 
+
             if (textEmail == "" || textUser == "" || textPassword == "" || textConfirm == "")
             {
                 Toast toast = Toast.MakeText(this, Resource.String.missing_fields, ToastLength.Short);
                 toast.Show();
             }
-            else if (!validEmail(textEmail))
+            else if (!Helper.validEmail(textEmail))
             {
                 Toast toast = Toast.MakeText(this, Resource.String.mail_no_valid, ToastLength.Short);
                 toast.Show();
@@ -78,7 +78,7 @@ namespace JoseTFG.Activities
                 Toast toast = Toast.MakeText(this, Resource.String.mismatched_password, ToastLength.Short);
                 toast.Show();
             }
-            else if (!strongPassword(textPassword))
+            else if (!Helper.strongPassword(textPassword))
             {
                 Toast toast = Toast.MakeText(this, Resource.String.password_no_strong, ToastLength.Long);
                 toast.Show();
@@ -99,48 +99,6 @@ namespace JoseTFG.Activities
                 }
             }
         }
-
-        private Boolean validEmail(String email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public Boolean strongPassword(String contraseñaSinVerificar)
-        {
-            //letras de la A a la Z, mayusculas y minusculas
-            Regex letrasMayus = new Regex(@"[A-Z]");
-            Regex letrasMin = new Regex(@"[a-z]");
-            //digitos del 0 al 9
-            Regex numeros = new Regex(@"[0-9]");
-            //cualquier caracter del conjunto
-            Regex caracEsp = new Regex("[!\"#\\$%&'()*+,-./:;=?@\\[\\]^_`{|}~]");
-
-            if (contraseñaSinVerificar.Length < 8) return false;
-
-            //si no contiene las letras, regresa false
-            if (!letrasMayus.IsMatch(contraseñaSinVerificar)) return false;
-
-            if (!letrasMin.IsMatch(contraseñaSinVerificar)) return false;
-
-            //si no contiene los numeros, regresa false
-            if (!numeros.IsMatch(contraseñaSinVerificar)) return false;
-
-
-            //si no contiene los caracteres especiales, regresa false
-            if (!caracEsp.IsMatch(contraseñaSinVerificar)) return false;
-
-            //si cumple con todo, regresa true
-            return true;
-        }
-
         public void OnClick(View v)
         {
             base.OnBackPressed();

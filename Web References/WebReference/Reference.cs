@@ -35,6 +35,12 @@ namespace JoseTFG.WebReference {
         
         private System.Threading.SendOrPostCallback RegistrarOperationCompleted;
         
+        private System.Threading.SendOrPostCallback UpdPwdOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Upd_eMailOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback delUserOperationCompleted;
+        
         private System.Threading.SendOrPostCallback listaEnfermedadesOperationCompleted;
         
         private System.Threading.SendOrPostCallback riesgoEnfermedadOperationCompleted;
@@ -85,6 +91,15 @@ namespace JoseTFG.WebReference {
         
         /// <remarks/>
         public event RegistrarCompletedEventHandler RegistrarCompleted;
+        
+        /// <remarks/>
+        public event UpdPwdCompletedEventHandler UpdPwdCompleted;
+        
+        /// <remarks/>
+        public event Upd_eMailCompletedEventHandler Upd_eMailCompleted;
+        
+        /// <remarks/>
+        public event delUserCompletedEventHandler delUserCompleted;
         
         /// <remarks/>
         public event listaEnfermedadesCompletedEventHandler listaEnfermedadesCompleted;
@@ -184,6 +199,103 @@ namespace JoseTFG.WebReference {
             if ((this.RegistrarCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.RegistrarCompleted(this, new RegistrarCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/UpdPwd", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool UpdPwd(string usuario, string old_pwd, string new_pwd) {
+            object[] results = this.Invoke("UpdPwd", new object[] {
+                        usuario,
+                        old_pwd,
+                        new_pwd});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void UpdPwdAsync(string usuario, string old_pwd, string new_pwd) {
+            this.UpdPwdAsync(usuario, old_pwd, new_pwd, null);
+        }
+        
+        /// <remarks/>
+        public void UpdPwdAsync(string usuario, string old_pwd, string new_pwd, object userState) {
+            if ((this.UpdPwdOperationCompleted == null)) {
+                this.UpdPwdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdPwdOperationCompleted);
+            }
+            this.InvokeAsync("UpdPwd", new object[] {
+                        usuario,
+                        old_pwd,
+                        new_pwd}, this.UpdPwdOperationCompleted, userState);
+        }
+        
+        private void OnUpdPwdOperationCompleted(object arg) {
+            if ((this.UpdPwdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdPwdCompleted(this, new UpdPwdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Upd_eMail", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool Upd_eMail(string usuario, string contra, string e_mail) {
+            object[] results = this.Invoke("Upd_eMail", new object[] {
+                        usuario,
+                        contra,
+                        e_mail});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Upd_eMailAsync(string usuario, string contra, string e_mail) {
+            this.Upd_eMailAsync(usuario, contra, e_mail, null);
+        }
+        
+        /// <remarks/>
+        public void Upd_eMailAsync(string usuario, string contra, string e_mail, object userState) {
+            if ((this.Upd_eMailOperationCompleted == null)) {
+                this.Upd_eMailOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_eMailOperationCompleted);
+            }
+            this.InvokeAsync("Upd_eMail", new object[] {
+                        usuario,
+                        contra,
+                        e_mail}, this.Upd_eMailOperationCompleted, userState);
+        }
+        
+        private void OnUpd_eMailOperationCompleted(object arg) {
+            if ((this.Upd_eMailCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Upd_eMailCompleted(this, new Upd_eMailCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/delUser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool delUser(string usuario, string contra) {
+            object[] results = this.Invoke("delUser", new object[] {
+                        usuario,
+                        contra});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void delUserAsync(string usuario, string contra) {
+            this.delUserAsync(usuario, contra, null);
+        }
+        
+        /// <remarks/>
+        public void delUserAsync(string usuario, string contra, object userState) {
+            if ((this.delUserOperationCompleted == null)) {
+                this.delUserOperationCompleted = new System.Threading.SendOrPostCallback(this.OndelUserOperationCompleted);
+            }
+            this.InvokeAsync("delUser", new object[] {
+                        usuario,
+                        contra}, this.delUserOperationCompleted, userState);
+        }
+        
+        private void OndelUserOperationCompleted(object arg) {
+            if ((this.delUserCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.delUserCompleted(this, new delUserCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -398,6 +510,84 @@ namespace JoseTFG.WebReference {
         private object[] results;
         
         internal RegistrarCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void UpdPwdCompletedEventHandler(object sender, UpdPwdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdPwdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdPwdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void Upd_eMailCompletedEventHandler(object sender, Upd_eMailCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Upd_eMailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Upd_eMailCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void delUserCompletedEventHandler(object sender, delUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class delUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal delUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

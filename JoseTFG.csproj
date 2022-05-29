@@ -68,6 +68,7 @@
     <Compile Include="Activities\InitActivity.cs" />
     <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MenuActivity.cs" />
+    <Compile Include="Activities\ProfileActivity.cs" />
     <Compile Include="Activities\RegisterActivity.cs" />
     <Compile Include="Activities\ResultActivity.cs" />
     <Compile Include="Activities\ResultHealthyActivity.cs" />
@@ -75,9 +76,11 @@
     <Compile Include="Data\AllQuestions.cs" />
     <Compile Include="Data\EpocQuestion.cs" />
     <Compile Include="Data\SahosQuestion.cs" />
+    <Compile Include="Models\Helper.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\QuestionMultipleSolutions.cs" />
     <Compile Include="Models\QuestionOneSolution.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web References\WebReference\Reference.cs">
@@ -253,6 +256,25 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\result_health_evaluation.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_menu_icon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_perfil.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\menu1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\profile.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_delete_bg.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

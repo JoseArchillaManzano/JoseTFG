@@ -5,6 +5,7 @@ using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
 using Google.Android.Material.TextField;
+using JoseTFG.Models;
 using JoseTFG.WebReference;
 using System;
 
@@ -19,6 +20,7 @@ namespace JoseTFG.Activities
         Button bSignIn;
         Button bSignUp;
         WS_Breathing ws;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -46,6 +48,8 @@ namespace JoseTFG.Activities
             }
             if (ws.EstaRegistrado(etUserName.Text, etPassword.Text))
             {
+                User.userName = etUserName.Text;
+                User.password = etPassword.Text;
                 Intent intent = new Intent(this, typeof(MenuActivity));
                 StartActivity(intent);
                 Finish();

@@ -22,7 +22,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/surveySahos">
+            android:id="@+id/survey">
 
             <TextView
                 android:text="@string/questions_sahos_1"

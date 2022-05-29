@@ -59,9 +59,7 @@ namespace JoseTFG.Activities
         }
         private void backMenu(object sender, EventArgs eventArgs)
         {
-            Intent intent = new Intent(this, typeof(MenuActivity));
-            StartActivity(intent);
-            Finish();
+            base.OnBackPressed();
         }
     }
 }
