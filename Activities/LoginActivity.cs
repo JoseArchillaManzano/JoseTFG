@@ -65,6 +65,7 @@ namespace JoseTFG.Activities
         {
             Intent intent = new Intent(this, typeof(RegisterActivity));
             StartActivity(intent);
+            Finish();
         }
 
         private void forgotPassword(object sender, EventArgs eventArgs)

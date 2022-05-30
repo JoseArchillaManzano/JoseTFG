@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Views;
+using Android.Views.InputMethods;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.TextField;
@@ -89,6 +91,12 @@ namespace JoseTFG.Activities
         }
         private void updateEmail(object sender, EventArgs eventArgs)
         {
+            View view = this.CurrentFocus;
+            if (view != null)
+            {
+                InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+                imm.HideSoftInputFromWindow(view.WindowToken, 0);
+            }
             var textEmail = etEmail.Text;
             if (!Helper.validEmail(textEmail))
             {
@@ -113,6 +121,12 @@ namespace JoseTFG.Activities
 
         private void updatePassword(object sender, EventArgs eventArgs)
         {
+            View view = this.CurrentFocus;
+            if (view != null)
+            {
+                InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+                imm.HideSoftInputFromWindow(view.WindowToken, 0);
+            }
             var textPassword = etPassword.Text;
             var textConfirmPassword = etConfirmPassword.Text;
             if (textPassword != textConfirmPassword)

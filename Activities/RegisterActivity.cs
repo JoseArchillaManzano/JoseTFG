@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
@@ -10,11 +9,10 @@ using Google.Android.Material.TextField;
 using JoseTFG.Models;
 using JoseTFG.WebReference;
 using System;
-using static Android.Views.View;
 namespace JoseTFG.Activities
 {
     [Activity(Label = "RegisterActivity")]
-    public class RegisterActivity : AppCompatActivity, IOnClickListener
+    public class RegisterActivity : AppCompatActivity
     {
         TextInputEditText etEmail;
         TextInputEditText etUserName;
@@ -30,7 +28,12 @@ namespace JoseTFG.Activities
             SetContentView(Resource.Layout.register);
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            toolbar.SetNavigationOnClickListener(this);
+            toolbar.NavigationClick += (send, args) =>
+            {
+                Intent intent = new Intent(this, typeof(LoginActivity));
+                StartActivity(intent);
+                Finish();
+            };
             SupportActionBar.Title = "";
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
             etPassword = FindViewById<EditText>(Resource.Id.et_password);
@@ -40,12 +43,6 @@ namespace JoseTFG.Activities
             ws = new WS_Breathing();
 
             bSignUp.Click += register;
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
         private void register(object sender, EventArgs eventArgs)
@@ -88,6 +85,8 @@ namespace JoseTFG.Activities
                 bool result = ws.Registrar(textUser, textPassword, "usuario", textEmail);
                 if (result)
                 {
+                    User.userName = etUserName.Text;
+                    User.password = etPassword.Text;
                     Intent intent = new Intent(this, typeof(MenuActivity));
                     StartActivity(intent);
                     Finish();
@@ -98,10 +97,6 @@ namespace JoseTFG.Activities
                     toast.Show();
                 }
             }
-        }
-        public void OnClick(View v)
-        {
-            base.OnBackPressed();
         }
     }
 }

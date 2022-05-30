@@ -10,12 +10,11 @@ using JoseTFG.WebReference;
 using System;
 
 using System.Collections.Generic;
-using static Android.Views.View;
 
 namespace JoseTFG.Activities
 {
     [Activity(Label = "SurveyActivity")]
-    public class SurveyActivity : AppCompatActivity, IOnClickListener
+    public class SurveyActivity : AppCompatActivity
     {
         List<Question> questions;
         LinearLayout linearLayout;
@@ -85,7 +84,10 @@ namespace JoseTFG.Activities
             bSurvey = FindViewById<Button>(Resource.Id.buttonSendSurvey);
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            toolbar.SetNavigationOnClickListener(this);
+            toolbar.NavigationClick += (send, args) =>
+            {
+                dialog.Show();
+            };
             SupportActionBar.Title = title;
 
             bSurvey.Click += checkSurvey;
@@ -226,11 +228,6 @@ namespace JoseTFG.Activities
 
 
         }
-        public void OnClick(View v)
-        {
-            dialog.Show();
-        }
-
         public override void OnBackPressed()
         {
             dialog.Show();
