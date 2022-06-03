@@ -2,11 +2,13 @@
 using Android.Content;
 using Android.OS;
 using Android.Views;
+using Android.Views.InputMethods;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
+using System.Timers;
 using static Android.Views.View;
 
 namespace JoseTFG.Activities
@@ -17,6 +19,7 @@ namespace JoseTFG.Activities
         Button bSend;
         TextInputEditText etUserName;
         WS_Breathing ws;
+        Timer timer;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,22 +37,37 @@ namespace JoseTFG.Activities
             bSend.Click += sendPassword;
         }
 
+        private void SetTimer()
+        {
+            timer = new Timer(2000);
+            timer.Elapsed += OnTimedEvent;
+            timer.AutoReset = false;
+            timer.Enabled = true;
+        }
+        private void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
+            timer.Stop();
+            timer.Dispose();
+            timer = null;
+            Finish();
+        }
         private void sendPassword(object sender, EventArgs eventArgs)
         {
+            View view = this.CurrentFocus;
+            if (view != null)
+            {
+                InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+                imm.HideSoftInputFromWindow(view.WindowToken, 0);
+            }
             var textUser = etUserName.Text;
             bool result = ws.RecuperaPwd(textUser);
             if (result)
             {
-                Toast toast = Toast.MakeText(this, Resource.String.send_email, ToastLength.Long);
+                Toast toast = Toast.MakeText(this, Resource.String.send_email, ToastLength.Short);
                 toast.Show();
-                new Handler().PostDelayed(() =>
-                {
-
-                    Intent intent = new Intent(this, typeof(LoginActivity));
-                    StartActivity(intent);
-                    Finish();
-
-                }, 3000);
+                SetTimer();
 
             }
             else

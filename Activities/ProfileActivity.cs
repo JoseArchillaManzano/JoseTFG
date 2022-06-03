@@ -160,5 +160,12 @@ namespace JoseTFG.Activities
         {
             dialog.Show();
         }
+
+        public override void OnBackPressed()
+        {
+            Intent intent = new Intent(this, typeof(MenuActivity));
+            StartActivity(intent);
+            Finish();
+        }
     }
 }

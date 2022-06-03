@@ -98,5 +98,12 @@ namespace JoseTFG.Activities
                 }
             }
         }
+
+        public override void OnBackPressed()
+        {
+            Intent intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
+            Finish();
+        }
     }
 }

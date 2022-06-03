@@ -1,43 +1,41 @@
-<resources>
+﻿<resources>
 	<string name="app_name">Login Template</string>
-	<string name="hint_username">Nombre de usuario</string>
-	<string name="hint_password">Contraseña</string>
-	<string name="button_sign_in">Iniciar sesión</string>
-	<string name="button_sign_up">Registrarse</string>
-	<string name="button_send">Enviar</string>
-	<string name="text_forgot_password">¿Has olvidado tu contraseña?</string>
-	<string name="text_signin_message">Hola, accede a tu cuenta</string>
-	<string name="text_signin_social_media">Or Sign in using social media</string>
-	<string name="text_signup_social_media">Or Sign up using social media</string>
+	<string name="hint_username">User name</string>
+	<string name="hint_password">Password</string>
+	<string name="button_sign_in">Login</string>
+	<string name="button_sign_up">Sign up</string>
+	<string name="button_send">Send</string>
+	<string name="text_forgot_password">Forgot your password?</string>
+	<string name="text_signin_message">Hello, sign in to your account</string>
 	<string name="text_signin_signup">
-		¿No tienes cuenta? <b>Regístrese</b>
+		Don\'t have an account? <b>Sign up</b>
 	</string>
 	<string name="text_signup_terms">
-		Al registrarse, acepta nuestros <b>terminos y condiciones</b>
+		By signing up, you agree to our <b>terms and conditions</b>
 	</string>
-	<string name="text_signup_message">Hola, vamos a crear su cuenta</string>
+	<string name="text_signup_message">Hello, let\'s set up your account</string>
 	<string name="text_change_password">Cambiar contraseña</string>
 	<string name="text_change_email">Cambiar correo electrónico</string>
 	<string name="text_change_user">Cambiar contraseña</string>
 	<string name="text_delete_count">Borrar cuenta</string>
 	<string name="text_update">Actualizar</string>
 
-	<string name="text_forgot_password_title">¿Ha olvidado su contraseña? No se preocupe</string>
-	<string name="text_forgot_password_message">Le enviaremos al correo asociado a su usuario la contraseña olvidada</string>
+	<string name="text_forgot_password_title">Forgot password? No worries</string>
+    <string name="text_forgot_password_message">We will send you a link to reset your password</string>
 
 	<string name="hint_email">Email</string>
-	<string name="hint_phone">Teléfono</string>
-	<string name="hint_confirm_password">Confirmar contraseña</string>
+	<string name="hint_phone">Phone</string>
+	<string name="hint_confirm_password">Confirm Password</string>
 
-	<string name="fail_login">El usuario o contraseña es incorrecto</string>
+	<string name="fail_login">The user or password is incorrect</string>
 	<string name="successful_update">La actualización se ha realizado correctamente</string>
-	<string name="successful_delete">La cuenta se ha eliminado correctamente</string>
-	<string name="no_successful_update">La actualización no se ha podido realizar. Vuelva a intentarlo</string>
-	<string name="user_already_registered">Este usuario ya está registrado</string>
-	<string name="send_email">Se ha enviado a su correo la contraseña solicitada</string>
-	<string name="user_not_registered">Este usuario no se encuentra en el sistema</string>
-	<string name="mail_no_valid">El email introducido no es valido</string>
-	<string name="mismatched_password">Las contraseñas no coinciden entre si</string>
+	<string name="successful_delete">The update was successful</string>
+	<string name="no_successful_update">The update could not be performed. Please try again</string>
+	<string name="user_already_registered">This user is already registered</string>
+	<string name="send_email">The requested password has been sent to your e-mail address.</string>
+	<string name="user_not_registered">This user is not in the system</string>
+	<string name="mail_no_valid">The email entered is not valid</string>
+	<string name="mismatched_password">Passwords do not match each other</string>
 	<string name="missing_fields">Faltan campos por rellenar</string>
 	<string name="questions_no_answered">Faltan preguntas por responder</string>
 	<string name="password_no_strong">La contraseña introducida debe contener al menos 8 caracteres y contener al menos una letra mayuscula, minúscula y un caracter especial</string>
