@@ -15,7 +15,6 @@ namespace JoseTFG.Activities
         Button bEpoc;
         Button bHealthEvaluation;
 
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -45,7 +44,6 @@ namespace JoseTFG.Activities
             switch (item.ItemId)
             {
                 case Resource.Id.item_perfil:
-                    //showMenu();
                     Intent intent = new Intent(this, typeof(ProfileActivity));
                     StartActivity(intent);
                     Finish();
@@ -54,7 +52,6 @@ namespace JoseTFG.Activities
                 default:
                     return base.OnOptionsItemSelected(item);
             }
-
         }
 
         private void startSahosTest(object sender, EventArgs eventArgs)

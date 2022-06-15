@@ -77,12 +77,10 @@
     <Compile Include="Activities\ResultActivity.cs" />
     <Compile Include="Activities\ResultHealthyActivity.cs" />
     <Compile Include="Activities\SurveyActivity.cs" />
-    <Compile Include="Data\AllQuestions.cs" />
     <Compile Include="Data\EpocQuestion.cs" />
     <Compile Include="Data\SahosQuestion.cs" />
     <Compile Include="Models\Helper.cs" />
     <Compile Include="Models\Question.cs" />
-    <Compile Include="Models\QuestionMultipleSolutions.cs" />
     <Compile Include="Models\QuestionOneSolution.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -164,16 +162,10 @@
     <None Include="Web References\WebReference\WS_Breathing.disco" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\app_logo_2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\button1_bg.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_back.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_facebook.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_lock.xml" />
@@ -183,9 +175,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_person.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_twitter.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\login.xml" />
@@ -281,9 +270,6 @@
     <AndroidResource Include="Resources\drawable\button_delete_bg.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\values-en\strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

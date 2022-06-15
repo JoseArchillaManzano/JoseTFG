@@ -9,12 +9,11 @@ using Google.Android.Material.TextField;
 using JoseTFG.WebReference;
 using System;
 using System.Timers;
-using static Android.Views.View;
 
 namespace JoseTFG.Activities
 {
     [Activity(Label = "ForgotPasswordActivity")]
-    public class ForgotPasswordActivity : AppCompatActivity, IOnClickListener
+    public class ForgotPasswordActivity : AppCompatActivity
     {
         Button bSend;
         TextInputEditText etUserName;
@@ -29,7 +28,12 @@ namespace JoseTFG.Activities
             SetContentView(Resource.Layout.forgot_password);
             var toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            toolbar.SetNavigationOnClickListener(this);
+            toolbar.NavigationClick += (send, args) =>
+            {
+                Intent intent = new Intent(this, typeof(LoginActivity));
+                StartActivity(intent);
+                Finish();
+            };
             SupportActionBar.Title = "";
             bSend = FindViewById<Button>(Resource.Id.button_send);
             etUserName = FindViewById<TextInputEditText>(Resource.Id.et_username);
@@ -50,7 +54,6 @@ namespace JoseTFG.Activities
             StartActivity(intent);
             timer.Stop();
             timer.Dispose();
-            timer = null;
             Finish();
         }
         private void sendPassword(object sender, EventArgs eventArgs)
@@ -77,9 +80,11 @@ namespace JoseTFG.Activities
             }
         }
 
-        public void OnClick(View v)
+        public override void OnBackPressed()
         {
-            base.OnBackPressed();
+            Intent intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
+            Finish();
         }
     }
 }

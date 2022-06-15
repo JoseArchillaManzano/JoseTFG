@@ -183,16 +183,6 @@ namespace JoseTFG.Activities
                         resultTest[i / 2] = q.getPunctuation();
                     }
                 }
-                else if (child is LinearLayout j)
-                {
-
-                    // QuestionMultipleSolutions q = (QuestionMultipleSolutions)questions[i / 2];
-                    for (int y = 0; y < j.ChildCount; y++)
-                    {
-                        CheckBox c = (CheckBox)j.GetChildAt(y);
-                        // q.Answers.Add(c.Checked);
-                    }
-                }
             }
             consultResults();
         }
@@ -225,14 +215,10 @@ namespace JoseTFG.Activities
                 StartActivity(intent);
                 Finish();
             }
-
-
         }
         public override void OnBackPressed()
         {
             dialog.Show();
         }
-
-
     }
 }

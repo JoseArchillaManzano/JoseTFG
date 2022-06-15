@@ -86,7 +86,6 @@ namespace JoseTFG.Activities
             StartActivity(intent);
             timer.Stop();
             timer.Dispose();
-            timer = null;
             Finish();
         }
         private void updateEmail(object sender, EventArgs eventArgs)

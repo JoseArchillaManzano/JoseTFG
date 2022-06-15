@@ -32,7 +32,6 @@ namespace JoseTFG.Activities
             StartActivity(intent);
             timer.Stop();
             timer.Dispose();
-            timer = null;
             Finish();
         }
 

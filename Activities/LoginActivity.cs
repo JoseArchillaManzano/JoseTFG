@@ -72,6 +72,7 @@ namespace JoseTFG.Activities
         {
             Intent intent = new Intent(this, typeof(ForgotPasswordActivity));
             StartActivity(intent);
+            Finish();
         }
     }
 }
