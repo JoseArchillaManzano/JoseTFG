@@ -21,7 +21,7 @@ namespace JoseTFG.Activities
 
         private void SetTimer()
         {
-            timer = new Timer(100);
+            timer = new Timer(800);
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = false;
             timer.Enabled = true;
